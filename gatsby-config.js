@@ -9,14 +9,19 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'www.thefrontlash.com',
+        baseUrl: 'zsbloggatsby.wordpress.com',
         // WP.com sites set to true, WP.org set to false
-        hostingWPCOM: false,
+        hostingWPCOM: true,
         // The protocol. This can be http or https.
         protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
-        auth: {},
+        auth: {
+	        wpcom_app_clientSecret: "I9vu5RxuYCaOSRrIqIObKGp9LYuIHl8UClkxbmINrfXtQU4vpFf9ymiKu4dUKjqb",
+			wpcom_app_clientId: "67424",
+			wpcom_user: "zakirsajib@gmail.com",
+			wpcom_pass: "Ncc007008@",
+        },
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,
       },
