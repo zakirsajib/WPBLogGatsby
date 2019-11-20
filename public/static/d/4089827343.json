@@ -1,1 +1,1 @@
-{"data":{"allWordpressPage":{"edges":[{"node":{"title":"About","slug":"about"}},{"node":{"title":"Contact","slug":"contact"}},{"node":{"title":"Home","slug":"home"}},{"node":{"title":"Blog","slug":"blog"}},{"node":{"title":"Services","slug":"services"}}]}}}
+{"data":{"allWordpressPage":{"edges":[{"node":{"title":"About","slug":"about"}},{"node":{"title":"Contact","slug":"contact"}}]}}}

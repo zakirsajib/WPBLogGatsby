@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
+import Footer from '../components/Footer'
+import Img from 'gatsby-image'
+
 
 export const BlogPostTemplate = ({
   content,
@@ -11,23 +14,30 @@ export const BlogPostTemplate = ({
   title,
   date,
   author,
+  featureimage
 }) => {
   return (
     <section className="section">
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-12">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <div dangerouslySetInnerHTML={{ __html: content }} />
-            <div style={{ marginTop: `4rem` }}>
-              <p>
-                {date} - posted by{' '}
-                <Link to={`/author/${author.slug}`}>{author.name}</Link>
-              </p>
+           </div>
+          </div>
+        </div> 
+            <div className="full-width-image-container">
+            <img src={featureimage.src} alt=""/>
+            </div>
+        <div className="container content">
+        	<div className="columns">
+				<div className="column is-12">               
+					<div dangerouslySetInnerHTML={{ __html: content }} />
+						<div style={{ marginTop: `4rem` }}>
+						<p>{date}</p>
               {categories && categories.length ? (
-                <div>
+	              <div>
                   <h4>Categories</h4>
                   <ul className="taglist">
                     {categories.map(category => (
@@ -38,10 +48,10 @@ export const BlogPostTemplate = ({
                       </li>
                     ))}
                   </ul>
-                </div>
+                  </div>
               ) : null}
               {tags && tags.length ? (
-                <div>
+                  <div>
                   <h4>Tags</h4>
                   <ul className="taglist">
                     {tags.map(tag => (
@@ -50,12 +60,16 @@ export const BlogPostTemplate = ({
                       </li>
                     ))}
                   </ul>
-                </div>
+                  </div>
               ) : null}
             </div>
           </div>
         </div>
       </div>
+      <div className="container">
+		<Footer><p>© 2019 Zakir Sajib. All Rights Reserved.</p>
+		<p>Built with WordPress, Gatsby, GitHub and Netlify</p></Footer>
+	  </div>
     </section>
   )
 }
@@ -78,6 +92,7 @@ const BlogPost = ({ data }) => {
         title={post.title}
         date={post.date}
         author={post.author}
+        featureimage={post.featured_media.localFile.childImageSharp.resolutions}
       />
     </Layout>
   )
@@ -117,6 +132,17 @@ export const pageQuery = graphql`
       author {
         name
         slug
+      }
+      featured_media{
+	    localFile{
+		    childImageSharp{
+			    resolutions(width:1152, height:450){
+				    src
+				    width
+				    height
+			    }
+		    }
+	    }
       }
     }
   }

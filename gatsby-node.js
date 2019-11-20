@@ -2,6 +2,7 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { paginate } = require('gatsby-awesome-pagination')
+const userConfig = require('./config');
 
 const getOnlyPublished = edges =>
   _.filter(edges, ({ node }) => node.status === 'publish')
@@ -98,7 +99,7 @@ exports.createPages = ({ actions, graphql }) => {
       paginate({
         createPage,
         items: posts,
-        itemsPerPage: 10,
+        itemsPerPage: userConfig.postsPerPage,
         pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/` : `/page`),
         component: blogTemplate,
       })

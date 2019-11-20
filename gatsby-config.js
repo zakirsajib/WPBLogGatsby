@@ -1,6 +1,11 @@
+const userConfig = require('./config');
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + WordPress Starter',
+    title: userConfig.title,
+    author: userConfig.author,
+    description: userConfig.description,
+    siteUrl: userConfig.siteUrl,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

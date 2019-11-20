@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
+import Footer from '../components/Footer'
 
 const Tag = props => {
   const { data, pageContext } = props
@@ -17,6 +18,8 @@ const Tag = props => {
     <Layout>
       <Helmet title={`${tag} | ${siteTitle}`} />
       <PostList posts={posts} title={title} />
+      <Footer><p>© 2019 Zakir Sajib. All Rights Reserved.</p>
+      <p>Built with WordPress, Gatsby, GitHub and Netlify</p></Footer>
     </Layout>
   )
 }

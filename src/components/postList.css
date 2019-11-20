@@ -1,0 +1,30 @@
+.postList{
+	box-shadow: rgba(35, 38, 52, 0.08) 0px 26px 50px 0px;
+    padding: 0px;
+    margin-bottom: 50px!important;
+}
+.featuredImage{padding: 0;line-height: 0}
+.postMetaDetails{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	align-items: center;
+}
+.readMore{
+	position:relative;
+	text-align:right;
+}
+.readMore a{
+	font-family:'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight:700;
+	letter-spacing: 1px;
+}
+.publishedDate{text-transform:capitalize;opacity:0.34;color:#2F3544}
+.button.is-primary{}
+
+@media only screen and (max-width: 768px) {
+    .featuredImage{
+	    text-align: center
+    }
+}
