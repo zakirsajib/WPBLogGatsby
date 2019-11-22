@@ -5,9 +5,9 @@ import Navbar from './Navbar'
 import './all.sass'
 
 import '../global-styles'
-import userConfig from '../../config';
+import userConfig from '../../config'
 import GlobalStyle from '../global-styles'
-
+import Footer from './Footer'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -15,6 +15,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet title={userConfig.title} />
     <Navbar />
     <div>{children}</div>
+    <Footer><p>© 2019 Zakir Sajib. All Rights Reserved.</p>
+    <p>Built with WordPress, Gatsby, GitHub and Netlify</p></Footer>
   </div>
 )
 

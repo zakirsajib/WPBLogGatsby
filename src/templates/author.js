@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
-import Footer from '../components/Footer'
 
 const Author = props => {
   const { data } = props
@@ -23,8 +22,6 @@ const Author = props => {
     <Layout>
       <Helmet title={`${name} | ${siteTitle}`} />
       <PostList posts={posts} title={title} />
-      <Footer><p>© 2019 Zakir Sajib. All Rights Reserved.</p>
-      <p>Built with WordPress, Gatsby, GitHub and Netlify</p></Footer>
     </Layout>
   )
 }

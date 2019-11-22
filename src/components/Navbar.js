@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import github from '../img/github-icon.svg'
+import linkedin from '../img/linkedin-icon.svg'
+import instagram from '../img/instagram-icon.svg'
+import home from '../img/link-icon.svg'
 import logo from '../img/logo.svg'
+import userConfig from '../../config'
 
 const Navbar = () => (
   <StaticQuery
@@ -18,15 +22,21 @@ const Navbar = () => (
       }
     `}
     render={data => (
-      <nav className="navbar is-transparent">
+      <nav className="navbar is-transparent" id="header">
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <figure className="image">
-                <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+                <img src={logo} alt="Zakir Sajib" style={{ width: '88px' }} />
               </figure>
             </Link>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			</a>
           </div>
+          <div id="navMenu" class="navbar-menu">
           <div className="navbar-start">
             {data.allWordpressPage.edges.map(edge => (
               <Link
@@ -41,7 +51,17 @@ const Navbar = () => (
           <div className="navbar-end">
             <a
               className="navbar-item"
-              href="https://github.com/zakirsajib"
+              href={userConfig.social.website}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <img src={home} alt="Zakir Sajib" />
+              </span>
+            </a>
+            <a
+              className="navbar-item"
+              href={userConfig.social.github}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -49,6 +69,27 @@ const Navbar = () => (
                 <img src={github} alt="Github" />
               </span>
             </a>
+            <a
+              className="navbar-item"
+              href={userConfig.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <img src={linkedin} alt="LinkedIn" />
+              </span>
+            </a>
+            <a
+              className="navbar-item"
+              href={userConfig.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <img src={instagram} alt="Instagram" />
+              </span>
+            </a>
+          </div>
           </div>
         </div>
       </nav>

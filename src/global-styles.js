@@ -5,22 +5,20 @@ const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
 
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700|Open+Sans:400,400i,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&display=swap');
 
-html {
-    box-sizing: border-box;
-  }
+html {box-sizing:border-box}
 
 body{
-	background: #f9fafc;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Maven Pro', sans-serif;
+	font-weight:500;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Maven Pro', sans-serif
-}
+h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
+nav#header {margin-bottom:1rem;margin-top:1rem;background-color:transparent}
+.navbar-item, .navbar-link{font-size:1.25rem}
 .section .container{max-width:960px}
 
 `;

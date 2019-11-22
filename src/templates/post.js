@@ -3,8 +3,17 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import Footer from '../components/Footer'
 import Img from 'gatsby-image'
+
+import userConfig from '../../config'
+import Share from '../components/Share'
+import '../styles/featured.img.css'
+import postStyles from '../styles/post.module.css'
+
+let url = '';
+    if (typeof window !== `undefined`) {
+      url = window.location.href;
+    }
 
 
 export const BlogPostTemplate = ({
@@ -18,58 +27,49 @@ export const BlogPostTemplate = ({
 }) => {
   return (
     <section className="section">
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-12">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-           </div>
-          </div>
+      	<div className={postStyles.entryHeader}>
+        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
         </div> 
-            <div className="full-width-image-container">
-            <img src={featureimage.src} alt=""/>
-            </div>
+       <div className={postStyles.postImg}><Img fluid={featureimage} alt={title}/></div>
         <div className="container content">
         	<div className="columns">
 				<div className="column is-12">               
 					<div dangerouslySetInnerHTML={{ __html: content }} />
-						<div style={{ marginTop: `4rem` }}>
-						<p>{date}</p>
-              {categories && categories.length ? (
-	              <div>
-                  <h4>Categories</h4>
-                  <ul className="taglist">
-                    {categories.map(category => (
-                      <li key={`${category.slug}cat`}>
-                        <Link to={`/categories/${category.slug}/`}>
-                          {category.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                  </div>
-              ) : null}
-              {tags && tags.length ? (
-                  <div>
-                  <h4>Tags</h4>
-                  <ul className="taglist">
-                    {tags.map(tag => (
-                      <li key={`${tag.slug}tag`}>
-                        <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                  </div>
-              ) : null}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-		<Footer><p>© 2019 Zakir Sajib. All Rights Reserved.</p>
-		<p>Built with WordPress, Gatsby, GitHub and Netlify</p></Footer>
-	  </div>
+					<div style={{ marginTop: `4rem` }}>
+					<p>published on {date}</p>
+		              {categories && categories.length ? (
+			            <div>
+		                  <h4>Categories</h4>
+		                  <ul className="taglist">
+		                    {categories.map(category => (
+		                      <li key={`${category.slug}cat`}>
+		                        <Link to={`/categories/${category.slug}/`}>
+		                          {category.name}
+		                        </Link>
+		                      </li>
+		                    ))}
+		                  </ul>
+		                </div>
+		              ) : null}
+		              {tags && tags.length ? (
+		                <div>
+		                  <h4>Tags</h4>
+		                  <ul className="taglist">
+		                    {tags.map(tag => (
+		                      <li key={`${tag.slug}tag`}>
+		                        <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
+		                      </li>
+		                    ))}
+		                  </ul>
+		                </div>
+		              ) : null}
+		              {userConfig.showShareButtons && (
+						<Share url={url} title={title} />
+						)}
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
   )
 }
@@ -92,7 +92,7 @@ const BlogPost = ({ data }) => {
         title={post.title}
         date={post.date}
         author={post.author}
-        featureimage={post.featured_media.localFile.childImageSharp.resolutions}
+        featureimage={post.featured_media.localFile.childImageSharp.fluid}
       />
     </Layout>
   )
@@ -136,11 +136,9 @@ export const pageQuery = graphql`
       featured_media{
 	    localFile{
 		    childImageSharp{
-			    resolutions(width:1152, height:450){
-				    src
-				    width
-				    height
-			    }
+			    fluid(maxWidth: 1152, quality: 100) {
+      				...GatsbyImageSharpFluid
+   				}
 		    }
 	    }
       }

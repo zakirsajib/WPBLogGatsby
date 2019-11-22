@@ -1,12 +1,20 @@
 .postMeta{
 	position: absolute;
 	bottom: 20px;
-	width: calc(100% - 25px);
+	width: calc(100% - 40px);
 }
-#postContent{position: relative;padding: 0.75rem 0.75rem 0}
-
+#postContent{position: relative;padding: 0.75rem 0.75rem 0 1.5rem}
 #postContent h2 a{color:#3e465b}
-
+#postContent h2 a:hover{border-bottom:1px solid}
+.pageImg{
+	margin-bottom:50px;
+	margin-left:-1.5rem;
+	margin-right:-1.5rem;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 @media only screen and (max-width: 915px) {
     .postMeta{
 	    position: relative;

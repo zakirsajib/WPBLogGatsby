@@ -6,6 +6,7 @@ const H2 = styled.h2`
   font-weight: 700;
   line-height: 1.3;
   margin-bottom:25px;
+  text-transform:capitalize;
 `;
 
 export default H2;

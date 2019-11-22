@@ -1,0 +1,22 @@
+h1{text-transform: capitalize}
+.entryHeader{
+	max-width: 1152px;
+	flex-grow: 1;
+	margin: 0 auto;
+	position: relative;
+	width: auto;
+	z-index: 1;
+	text-align: center
+}
+.postImg{
+	margin-bottom:50px;
+	margin-left:-1.5rem;
+	margin-right:-1.5rem;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+@media only screen and (max-width: 480px) {
+	.entryHeader h1{font-size:1.5rem!important}
+}

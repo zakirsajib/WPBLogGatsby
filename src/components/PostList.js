@@ -2,11 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import H2 from '../components/H2'
-import '../components/postList.css'
+import H2 from './H2'
+import '../styles/postList.css'
 
-
-import indexStyles from "../styles/index.module.css"
+import indexStyles from '../styles/index.module.css'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -21,7 +20,8 @@ export default class IndexPage extends React.Component {
               key={post.id}
             >
               <div className="column featuredImage">
-              <Link to={post.slug}><Img resolutions ={post.featured_media.localFile.childImageSharp.resolutions}/></Link>
+              <Link to={post.slug}><Img 
+              fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link>
               </div>
               
               <div className="column" id={indexStyles.postContent}>
@@ -30,9 +30,8 @@ export default class IndexPage extends React.Component {
                   {post.title}
                 </Link>
               </H2>
-                
               <div>              
-              <div dangerouslySetInnerHTML={{ __html: post.excerpt}} />
+              <div dangerouslySetInnerHTML={{ __html: post.excerpt}}/>
               <div className={indexStyles.postMeta}>
               <div className="postMetaDetails">  
             <div className="publishedDate"><small>Published on {post.date}</small></div>
@@ -73,11 +72,9 @@ export const pageQuery = graphql`
     featured_media{
 	    localFile{
 		    childImageSharp{
-			    resolutions(width:450, height:350){
-				    src
-				    width
-				    height
-			    }
+			    fluid(maxWidth: 500, quality: 100) {
+      				...GatsbyImageSharpFluid
+   				}
 		    }
 	    }
     }
