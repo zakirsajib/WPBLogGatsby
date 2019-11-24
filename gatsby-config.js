@@ -21,12 +21,17 @@ module.exports = {
         protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
+        perPage: 50,
+        concurrentRequests: 10,
         auth: {
 	        wpcom_app_clientSecret: "I9vu5RxuYCaOSRrIqIObKGp9LYuIHl8UClkxbmINrfXtQU4vpFf9ymiKu4dUKjqb",
-			wpcom_app_clientId: "67424",
-			wpcom_user: "zakirsajib@gmail.com",
-			wpcom_pass: "Ncc007008@",
+			    wpcom_app_clientId: "67424",
+			    wpcom_user: "zakirsajib@gmail.com",
+          wpcom_pass: "Ncc007008@",
         },
+        plugins: [
+          `gatsby-wordpress-reading-time`,
+        ],
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,
       },

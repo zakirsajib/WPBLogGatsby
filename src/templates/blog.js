@@ -40,6 +40,11 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            readingTime {
+              text
+            }
+          }
           ...PostListFields
         }
       }

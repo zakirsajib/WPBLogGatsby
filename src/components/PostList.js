@@ -25,11 +25,12 @@ export default class IndexPage extends React.Component {
               </div>
               
               <div className="column" id={indexStyles.postContent}>
-              <H2>
+              <H2 style={{marginBottom: `10px`, fontSize: `22px`, fontWeight: `700`, color: `#3e465b`}}>
                 <Link to={post.slug}>
                   {post.title}
                 </Link>
               </H2>
+              <p style={{marginBottom: `15px`}}>{post.fields.readingTime.text}</p>
               <div>              
               <div dangerouslySetInnerHTML={{ __html: post.excerpt}}/>
               <div className={indexStyles.postMeta}>
@@ -67,6 +68,11 @@ export const pageQuery = graphql`
       slug
       avatar_urls {
         wordpress_48
+      }
+    }
+    fields {
+      readingTime {
+        text
       }
     }
     featured_media{
