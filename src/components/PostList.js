@@ -26,9 +26,7 @@ export default class IndexPage extends React.Component {
               
               <div className="column" id={indexStyles.postContent}>
               <H2 style={{marginBottom: `10px`, fontSize: `22px`, fontWeight: `700`, color: `#3e465b`}}>
-                <Link to={post.slug}>
-                  {post.title}
-                </Link>
+                <Link to={post.slug} dangerouslySetInnerHTML={{ __html: post.title}}></Link>
               </H2>
               <p style={{marginBottom: `15px`}}>{post.fields.readingTime.text}</p>
               <div>              

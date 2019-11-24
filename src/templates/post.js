@@ -28,7 +28,7 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       	<div className={postStyles.entryHeader}>
-        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
+        <h1 className="title is-size-2 has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: title}}/>
         <p style={{color: `#f9fafc`}}>{' '}{date} - {readingTime}</p>
        </div> 
       <div className={postStyles.postImg}><Img fluid={featureimage} alt={title} /></div>
