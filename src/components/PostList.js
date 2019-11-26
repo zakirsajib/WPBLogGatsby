@@ -14,18 +14,19 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="container">
+          <div className="columns" style={{paddingBottom: `15px`}}>
+            <H2 style={{color: `#e0e1e2`}} dangerouslySetInnerHTML={{ __html: title}}></H2>
+          </div>
           {posts.map(({ node: post }) => (
             <div
               className="columns postList"
               key={post.id}
             >
               <div className="column featuredImage">
-              <Link to={post.slug}><Img 
-              fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link>
+              <Link to={post.slug}><Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link>
               </div>
-              
               <div className="column" id={indexStyles.postContent}>
-              <H2 style={{marginBottom: `10px`, fontSize: `22px`, fontWeight: `700`, color: `#3e465b`}}>
+              <H2>
                 <Link to={post.slug} dangerouslySetInnerHTML={{ __html: post.title}}></Link>
               </H2>
               <p style={{marginBottom: `15px`}}>{post.fields.readingTime.text}</p>

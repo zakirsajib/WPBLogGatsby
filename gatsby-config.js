@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-source-wordpress',
       options: {
@@ -29,13 +30,17 @@ module.exports = {
 			    wpcom_user: "zakirsajib@gmail.com",
           wpcom_pass: "Ncc007008@",
         },
+        searchAndReplaceContentUrls: {
+          sourceUrl: "https://zsbloggatsby.wordpress.com",
+          replacementUrl: "https://nirvana.netlify.com"
+        },
         plugins: [
           `gatsby-wordpress-reading-time`,
         ],
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,
       },
-    },
+    },   
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

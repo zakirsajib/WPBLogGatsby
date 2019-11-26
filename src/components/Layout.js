@@ -16,9 +16,8 @@ const TemplateWrapper = ({ children }) => (
     <Navbar />
     <div>{children}</div>
     <Footer>
-<p>© 2019 Zakir Sajib. All Rights Reserved.</p>
-      <p>Built with WordPress, Gatsby, GitHub and Netlify</p>
-
+      <p>© 2019 Zakir Sajib. All Rights Reserved.</p>
+      <p>Built with Gatsby - datasource is WordPress.com - open-sourced on gitHub - deployed on Netlify</p>
     </Footer>
   </div>
 )

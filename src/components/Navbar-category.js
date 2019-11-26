@@ -32,10 +32,10 @@ class Navbar extends Component {
       <StaticQuery
         query={graphql`  
         {
-            allWordpressPage { 
+            allWordpressCategory { 
               edges {
                 node {
-                  title
+                  name
                   wordpress_id
                   slug
                 }
@@ -44,7 +44,7 @@ class Navbar extends Component {
           }
         `}
         render={data => {
-          const wordpressPages = data.allWordpressPage.edges;
+          const wordpressCategory = data.allWordpressCategory.edges;
           return (
             <nav className="navbar is-transparent" id="header">
               <div className="container">
@@ -62,13 +62,13 @@ class Navbar extends Component {
                 </div>
                 <div id="navMenu" className="navbar-menu">
                   <div className="navbar-start has-text-centered">
-                    {wordpressPages.map(page => (
+                    {wordpressCategory.map(categories => (
                       <Link
                         className="navbar-item"
-                        to={`/${page.node.slug}`}
-                        key={page.node.wordpress_id}
+                        to={`categories/${categories.node.slug}`}
+                        key={categories.node.wordpress_id}
                       >
-                        {page.node.title}
+                        {categories.node.name}
                       </Link>
                     ))}
                   </div>

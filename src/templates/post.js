@@ -15,7 +15,6 @@ let url = '';
       url = window.location.href;
     }
 
-
 export const BlogPostTemplate = ({
   content,
   categories,
@@ -31,7 +30,7 @@ export const BlogPostTemplate = ({
         <h1 className="title is-size-2 has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: title}}/>
         <p style={{color: `#f9fafc`}}>{' '}{date} - {readingTime}</p>
        </div> 
-      <div className={postStyles.postImg}><Img fluid={featureimage} alt={title} /></div>
+       <div className={postStyles.postImg}><Img fluid={featureimage} alt={title} /></div>
       <div className="container content">
         <div className="columns">
           <div className="column is-12">               
@@ -65,7 +64,7 @@ export const BlogPostTemplate = ({
 		              ) : null}
               {userConfig.showShareButtons && (
                 <Share url={url} title={title} />
-						)}
+						  )}
             </div>
           </div>
         </div>
