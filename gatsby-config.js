@@ -68,7 +68,7 @@ module.exports = {
         // Activates purging in gatsby develop
         develop: false,
         // Purge only the main css file
-        purgeOnly: ['/all.sass','styles/postList.css','styles/index.module.css', 'styles/post.module.css', 'styles/featured.img.css'],
+        purgeOnly: ['/all.sass','styles/postList.css','styles/index.module.css', 'styles/post.module.css', 'styles/featured.img.css', 'styles/global.css'],
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array

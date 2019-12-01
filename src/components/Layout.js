@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children }) => (
     <div>{children}</div>
     <Footer>
       <p>© 2019 Zakir Sajib. All Rights Reserved.</p>
-      <p>Built with Gatsby - datasource is WordPress.com - open-sourced on gitHub - deployed on Netlify</p>
+      <p>Built with Gatsby - datasource is WordPress.com - open-sourced on gitHub - hosted on Netlify</p>
     </Footer>
   </div>
 )

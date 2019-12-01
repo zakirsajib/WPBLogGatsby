@@ -5,7 +5,7 @@ import github from '../img/github-icon.svg'
 import linkedin from '../img/linkedin-icon.svg'
 import instagram from '../img/instagram-icon.svg'
 import home from '../img/link-icon.svg'
-import logo from '../img/logo.svg'
+//import logo from '../img/main.jpg'
 import userConfig from '../../config'
 
 class Navbar extends Component {
@@ -49,11 +49,7 @@ class Navbar extends Component {
             <nav className="navbar is-transparent" id="header">
               <div className="container">
                 <div className="navbar-brand">
-                  	<Link to="/" className="navbar-item">
-                    <figure className="image">
-                      <img src={logo} alt="Zakir Sajib" style={{ width: "88px" }} />
-                    </figure>                    
-                   </Link>
+                  <Link to="/" className="navbar-item logo" style={{fontSize: `2rem`}}>NIRVANA</Link>
                   <div className="navbar-burger burger" data-target="navMenu">
                     <span />
                     <span />

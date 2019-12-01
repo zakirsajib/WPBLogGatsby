@@ -4,28 +4,55 @@ This starter is forked from the
 [gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms)
 and modified to use WordPress instead of netlify-cms, using the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin as the data connector.
 
-Demo: https://gatsby-starter-wordpress.netlify.com/
+Demo: https://nirvana.netlify.com
 
 ## Use It Now
 
-    gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress
+    gatsby new NAME https://github.com/zakirsajib/WPBLogGatsby
 
 * Edit `gatsby-config.js`, change `baseUrl`
   - Make sure you have at least 1 post and 1 page on your WordPress site
   - Make sure at least 1 post has at least 1 tag
 * Ensure the permalink structure in your WordPress installation is set to `Post Name` instead of the deafult `Plain`, or else the `gatsby-source-wordpress` plugin won't be able to communicate with WordPress
-* Rejoice
-  - For more information on the source plugin, check out the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) repository page
-  - File any [issues here](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues)
+
+### Already Done
+
+* Implemented post featured image
+* Share buttons
+* Integrated Google fonts
+* Integrated Bulma CSS famework
+* Integrated Google analytics
+* Integrated PWA
+* Responsive image
+* Pagination both index and single page
+* Implemented menu and burger menu
+* Integrated reading time
+
+### To Be Done
+
+* Facebook comments
+* Contact form
+* Conditional check on featured image
+* Related posts
+* Search functionality
+* Gravity form integration
+* Slideshow or carousel
+* Portfolio
+* Instagram integration
+
 
 ### Known Limitations
 
+* While gatsby build or gatsby build command, there is an error message shows up though it doesn't effect the functionality of the site. I believe its related to WordPress.com restrictions. Error message: 
+`Path: /wp/v2/sites/mysitename.wordpress.com/jetpack-global-styles?per_page=50&page=1`
+`The server response was "403 Forbidden"`
+`Inner exception message: "Sorry, you are not allowed to do that."`
 * This is based on the [netlify starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) which uses [bulma](https://bulma.io). This adds 150KB to every built page.
 * Your WordPress site must have at least 1 post with 1 tag, or the starter will crash
 * Nested pages / categories will not render with nested pages
   - A WordPress page like `/about/team/` will render on Gatsby as `/team/`
   - Likewise for categories
-  - Discussion here https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues/24
+  - Discussion here https://github.com/zakirsajib/WPBLogGatsby/issues
 
 ## CSS Processing
 
@@ -33,13 +60,10 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 
 ## WordPress Setup
 
-Check the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin for more information. If you want to copy the demo content, you can grab the [WordPress XML export here](https://wpdemo.gatsbycentral.com/gatsbystarterwordpress.WordPress.2019-09-12.xml) and import it into your WordPress site as a starting point.
+* If you use WordPress.com, then you won't need to install any plugins. But if you use self hosted WordPress.org, then you need to install graphQL plugin (https://github.com/wp-graphql/wp-graphql). Installation guidance: https://docs.wpgraphql.com/getting-started/install-and-activate/
+* If you want to host on netlify and want to updates netlify (trigger build process) when contents of wordpress changes then you need to install netlify plugin (https://wordpress.org/plugins/webhook-netlify-deploy/) in your wordpress site. 
+
 
 ## Contributors
 
-This starter was forked from the netlify starter by the
-[GatsbyCentral](https://www.gatsbycentral.com/) crew. Additional contributions
-were gratefully received from the following folks:
 
-* https://github.com/tomByrer
-* https://github.com/dajocarter

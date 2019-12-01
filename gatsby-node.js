@@ -1,7 +1,7 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
-const { paginate, createPagePerItem } = require('gatsby-awesome-pagination')
+const { paginate } = require('gatsby-awesome-pagination')
 const userConfig = require('./config');
 
 const getOnlyPublished = edges =>
@@ -55,11 +55,14 @@ exports.createPages = ({ actions, graphql }) => {
     .then(() => {
       return graphql(`
         {
-          allWordpressPost {
+          allWordpressPost(
+            sort: { fields: date, order: DESC }
+          ){
             edges {
               node {
                 id
                 slug
+                title
                 status
               }
             }
@@ -95,23 +98,6 @@ exports.createPages = ({ actions, graphql }) => {
         })
       })
 
-  
-    //   allPosts.forEach((post, index) => {
-    //   const previous =
-    //     index === allPosts.length - 1 ? null : allPosts[index + 1].node;
-    //   const next = index === 0 ? null : allPosts[index - 1].node;
-    //   createPage({
-    //     path: post.node.slug,
-    //     component: blogPost,
-    //     context: {
-    //       slug: post.node.slug,
-    //       previous,
-    //       next
-    //     }
-    //   });
-    // });
-
-
       // Create a paginated blog, e.g., /, /page/2, /page/3
       paginate({
         createPage,
@@ -120,14 +106,22 @@ exports.createPages = ({ actions, graphql }) => {
         pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/` : `/page`),
         component: blogTemplate,
       });
-      // Create one page per blog post, with a link to the previous and next blog posts.
-       // createPagePerItem({
-      //    createPage,
-       //   items: posts,
-       //   component: postTemplate,
-       //   itemToPath: "node.slug",
-       //   itemToId: "node.id"
-       // });
+      
+      // Create one page per blog post, with a link to the previous and next blog posts
+      posts.forEach((post, index) => {
+        const previous =
+          index === posts.length - 1 ? null : posts[index + 1].node;
+        const next = index === 0 ? null : posts[index - 1].node;
+        createPage({
+          path: post.node.slug,
+          component: postTemplate,
+          context: {
+            slug: post.node.slug,
+            previous,
+            next
+          }
+        });
+      });
     })
     .then(() => {
       return graphql(`

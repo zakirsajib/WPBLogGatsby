@@ -32,6 +32,9 @@ nav#header {margin-bottom:1rem;margin-top:1rem;background-color:transparent}
 	.navbar-item, .navbar-link{
 		color: #f9fafc
 	}
+	a.navbar-item.logo {
+		color: #000;
+	}
 }
 
 `;

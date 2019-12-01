@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+//import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
@@ -15,32 +15,29 @@ let url = '';
       url = window.location.href;
     }
 
-export const BlogPostTemplate = ({
-  content,
-  categories,
-  tags,
-  title,
-  date,
-  featureimage,
-  readingTime
-}) => {
+  export default props => {
+    const post = props.data.wordpressPost;
+    const { previous, next } = props.pageContext;
+
   return (
-    <section className="section">
+    <Layout>
+      <Helmet title={`${post.title} | Blog`} />
+        <section className="section">
       	<div className={postStyles.entryHeader}>
-        <h1 className="title is-size-2 has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: title}}/>
-        <p style={{color: `#f9fafc`}}>{' '}{date} - {readingTime}</p>
+        <h1 className="title is-size-2 has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: post.title}}/>
+        <p style={{color: `#f9fafc`}}>{' '}{post.date} - {post.fields.readingTime.text}</p>
        </div> 
-       <div className={postStyles.postImg}><Img fluid={featureimage} alt={title} /></div>
+       <div className={postStyles.postImg}><Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /></div>
       <div className="container content">
         <div className="columns">
           <div className="column is-12">               
-            <div dangerouslySetInnerHTML={{ __html: content }} />
+            <div dangerouslySetInnerHTML={{ __html: post.content }} />
             <div style={{ marginTop: `4rem` }}>
-              {categories && categories.length ? (
+              {post.categories && post.categories.length ? (
                   <div>
                   <h4>Categories</h4>
                   <ul className="taglist">
-                    {categories.map(category => (
+                    {post.categories.map(category => (
                       <li key={`${category.slug}cat`}>
                       <Link to={`/categories/${category.slug}/`}>
                         {category.name}
@@ -50,11 +47,11 @@ export const BlogPostTemplate = ({
                   </ul>
                 </div>
 		              ) : null}
-              {tags && tags.length ? (
+                  {post.tags && post.tags.length ? (
                   <div>
                   <h4>Tags</h4>
                   <ul className="taglist">
-                    {tags.map(tag => (
+                    {post.tags.map(tag => (
                     <li key={`${tag.slug}tag`}>
                     <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
                   </li>
@@ -63,75 +60,48 @@ export const BlogPostTemplate = ({
                 </div>
 		              ) : null}
               {userConfig.showShareButtons && (
-                <Share url={url} title={title} />
+                <Share url={url} title={post.title} />
 						  )}
+              <div className="pagination is-centered" role="navigation" aria-label="pagination">
+                  {previous && (
+                    <Link to={`/${previous.slug}`} rel="prev" className="pagination-previous">← Previous post</Link>
+                  )}
+                  {next && (
+                  <Link to={`/${next.slug}`} rel="next" className="pagination-next">Next post →</Link>
+                  )}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
-
-BlogPostTemplate.propTypes = {
-  content: PropTypes.node.isRequired,
-  title: PropTypes.string,
-}
-
-const BlogPost = ({ data }) => {
-  const { wordpressPost: post } = data
-
-  return (
-    <Layout>
-      <Helmet title={`${post.title} | Blog`} />
-      <BlogPostTemplate
-        content={post.content}
-        categories={post.categories}
-        tags={post.tags}
-        title={post.title}
-        date={post.date}
-        readingTime={post.fields.readingTime.text}
-        featureimage={post.featured_media.localFile.childImageSharp.fluid}
-      />
     </Layout>
   )
 }
 
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
-
-export default BlogPost
-
-export const pageQuery = graphql`
-  fragment PostFields on wordpress__POST {
-    id
-    slug
-    content
-    date(formatString: "MMMM DD, YYYY")
-    title
-    fields {
-      readingTime {
-        text
+export const query = graphql`
+  query($slug: String) {
+    site {
+      siteMetadata {
+        title
+        author
       }
     }
-  }
-  query BlogPostByID($id: String!) {
-    wordpressPost(id: { eq: $id }) {
-      id
-      title
-      slug
-      content
+    wordpressPost(slug: { eq: $slug }) {
       date(formatString: "MMMM DD, YYYY")
+      title
+      content
+      excerpt
       categories {
         name
         slug
       }
-      tags {
+      tags{
         name
         slug
+      }
+      author {
+        name
       }
       fields {
         readingTime {
@@ -149,4 +119,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
