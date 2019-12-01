@@ -7,11 +7,11 @@
   Referrer-Policy: same-origin
 /commons.7d0cb50fb8525ff5d509.css
   Cache-Control: public, max-age=31536000, immutable
-/commons-a7ef0d43b6dd715a6921.js
+/commons-1d96468bd8ff1e561161.js
   Cache-Control: public, max-age=31536000, immutable
 /styles.f342110281484fd8dbfa.css
   Cache-Control: public, max-age=31536000, immutable
-/styles-6a942beaa533d0161114.js
+/styles-5ba0040f699c153b3242.js
   Cache-Control: public, max-age=31536000, immutable
 /component---src-templates-page-js-3011bcf602bef73d50d3.js
   Cache-Control: public, max-age=31536000, immutable
@@ -29,7 +29,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /undefined
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-0fe0e898053c5afce0c2.js
+/webpack-runtime-a983e7579548444eb998.js
   Cache-Control: public, max-age=31536000, immutable
 /app-11aaaa6d68c3c81033e8.js
   Cache-Control: public, max-age=31536000, immutable
@@ -38,156 +38,176 @@
 /sw.js
   Cache-Control: no-cache
 /about/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-page-js-3011bcf602bef73d50d3.js>; rel=preload; as=script
 /contact/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-page-js-3011bcf602bef73d50d3.js>; rel=preload; as=script
-/fix-mysql-installation-in-your-mac-osx-el-eapitan-10-11-16/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+/how-to-kill-process-in-mac/
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
+  Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
+/fix-mysql-installation-in-your-mac-osx-el-eapitan-10-11-16/
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
 /differences-between-session-and-cookies-in-php/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
 /php-interview-questions-answers/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
 /what-does-an-ssl-certificate-do-what-are-its-main-benefits-to-a-website/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
 /
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-blog-js-7ce3d36342b0f9496680.js>; rel=preload; as=script
-/fix-mysql-installation-in-your-mac-osx-el-eapitan-10-11-16
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+/how-to-kill-process-in-mac
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
+  Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
+/fix-mysql-installation-in-your-mac-osx-el-eapitan-10-11-16
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
 /differences-between-session-and-cookies-in-php
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
 /php-interview-questions-answers
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
 /what-does-an-ssl-certificate-do-what-are-its-main-benefits-to-a-website
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
-  Link: </styles-6a942beaa533d0161114.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </styles-5ba0040f699c153b3242.js>; rel=preload; as=script
   Link: </component---src-templates-post-js-24032f40f420058aa458.js>; rel=preload; as=script
 /categories/mac-osx/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-category-js-e0625ba256227901b711.js>; rel=preload; as=script
 /categories/mysql/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-category-js-e0625ba256227901b711.js>; rel=preload; as=script
 /categories/php/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-category-js-e0625ba256227901b711.js>; rel=preload; as=script
 /categories/security/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-category-js-e0625ba256227901b711.js>; rel=preload; as=script
 /tags/cookie/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-tag-js-edf034e3e7ad7599b1f6.js>; rel=preload; as=script
 /tags/el-eapitan/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-tag-js-edf034e3e7ad7599b1f6.js>; rel=preload; as=script
 /tags/interview/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-tag-js-edf034e3e7ad7599b1f6.js>; rel=preload; as=script
 /tags/php/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-tag-js-edf034e3e7ad7599b1f6.js>; rel=preload; as=script
 /tags/session/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-tag-js-edf034e3e7ad7599b1f6.js>; rel=preload; as=script
 /tags/ssl/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </component---src-templates-tag-js-edf034e3e7ad7599b1f6.js>; rel=preload; as=script
+/tags/terminal/
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
+  Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-tag-js-edf034e3e7ad7599b1f6.js>; rel=preload; as=script
 /author/amgadvisor
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-templates-author-js-36fe2753c4343f469f29.js>; rel=preload; as=script
 /404/
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-pages-404-js-083870df1d344fb5716c.js>; rel=preload; as=script
 /404.html
-  Link: </webpack-runtime-0fe0e898053c5afce0c2.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </webpack-runtime-a983e7579548444eb998.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </app-11aaaa6d68c3c81033e8.js>; rel=preload; as=script
-  Link: </commons-a7ef0d43b6dd715a6921.js>; rel=preload; as=script
+  Link: </commons-1d96468bd8ff1e561161.js>; rel=preload; as=script
   Link: </component---src-pages-404-js-083870df1d344fb5716c.js>; rel=preload; as=script
