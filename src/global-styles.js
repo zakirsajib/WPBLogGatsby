@@ -11,7 +11,7 @@ html {box-sizing:border-box}
 
 body{
 	font-family: 'Maven Pro', sans-serif;
-	font-weight:500;
+	font-weight:400;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

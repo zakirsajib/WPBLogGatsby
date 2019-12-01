@@ -49,7 +49,7 @@ class Navbar extends Component {
             <nav className="navbar is-transparent" id="header">
               <div className="container">
                 <div className="navbar-brand">
-                  <Link to="/" className="navbar-item logo" style={{fontSize: `2rem`}}>NIRVANA</Link>
+                  <Link to="/" className="navbar-item logo" style={{fontSize: `1.8rem`,fontWeight: `700`}}>NIRVANA</Link>
                   <div className="navbar-burger burger" data-target="navMenu">
                     <span />
                     <span />

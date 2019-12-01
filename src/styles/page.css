@@ -1,0 +1,22 @@
+.content p, 
+ul li, 
+ol li{font-size: 1.25em}
+blockquote{
+    background-image: url(../img/quote_e50de5.svg);
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 48px;
+    quotes:none;
+}
+blockquote p {
+    font-size: 1.5em!important;
+    font-weight: 400;
+    letter-spacing: -.3px;
+}
+code{
+    font-size: 0.8em;
+    background: #e5e7ea;
+    padding: 5px;
+    letter-spacing: 2px;
+}

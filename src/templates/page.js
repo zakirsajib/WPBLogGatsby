@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Img from 'gatsby-image'
+import '../styles/page.css'
 import '../styles/featured.img.css'
 import indexStyles from '../styles/index.module.css'
 
