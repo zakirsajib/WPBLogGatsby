@@ -20,3 +20,11 @@ code{
     padding: 5px;
     letter-spacing: 2px;
 }
+#pageTitle{
+	margin: -50% auto 0;
+    position: absolute;
+    left:0;
+    right:0;
+	width: 100%;
+	text-align: center;
+}

@@ -1,19 +1,16 @@
 h1{text-transform: capitalize}
 .entryHeader{
-	max-width: 1152px;
-	flex-grow: 1;
-	margin: 0 auto;
-	position: relative;
-	width: auto;
-	z-index: 1;
-	text-align: center
+	margin: -50% auto 0;
+    position: absolute;
+    left:0;
+    right:0;
+	width: 100%;
+	text-align: center;
 }
 .postImg{
-	margin-bottom:50px;
-	position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    margin-bottom:50px;
+    margin-top: -6em;
+	position: relative;
 }
 .postImg:after {
     position: absolute;
@@ -25,6 +22,10 @@ h1{text-transform: capitalize}
     background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.1)),to(rgba(0,0,0,.8)));
     background: linear-gradient(180deg,rgba(0,0,0,.1) 0,rgba(0,0,0,.8));
 }
-@media only screen and (max-width: 600px) {
-	.entryHeader h1{font-size:1.25rem!important}
+@media only screen and (max-width: 580px) {
+	.entryHeader h1{font-size:1.5em!important}
+}
+@media only screen and (max-width: 480px) {
+    .entryHeader{margin: -70% auto 0;}
+    .entryHeader h1{font-size:1.25em!important}
 }

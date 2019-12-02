@@ -4,31 +4,21 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Img from 'gatsby-image'
 import '../styles/page.css'
-import '../styles/featured.img.css'
 import indexStyles from '../styles/index.module.css'
 
 export const PageTemplate = ({ title, content, featureimage }) => {
   return (
+    <div>
+    <div className={indexStyles.pageImg}><Img fluid={featureimage}/></div>
     <section className="section section--gradient">
       <div className="container" id="pageTitle">
-        <div className="columns">
-          <div className="column is-12">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">{title}</h2>
-            </div>
-          </div>
-        </div>
+        <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">{title}</h2>
       </div>  
-	  <div className={indexStyles.pageImg}><Img fluid={featureimage}/></div>
       <div className="container">
-            <div className="section">        
-              <div
-                className="content"
-                dangerouslySetInnerHTML={{ __html: content }}
-              />
-            </div>
+        <div className="content" dangerouslySetInnerHTML={{ __html: content }}/>
       </div>
     </section>
+    </div>
   )
 }
 

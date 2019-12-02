@@ -22,12 +22,12 @@ let url = '';
   return (
     <Layout>
       <Helmet title={`${post.title} | Blog`} />
+      	<div className={postStyles.postImg}><Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /></div>
         <section className="section">
-      	<div className={postStyles.entryHeader}>
+        <div className={postStyles.entryHeader}>
         <h1 className="title is-size-2 has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: post.title}}/>
         <p style={{color: `#f9fafc`}}>{' '}{post.date} - {post.fields.readingTime.text}</p>
        </div> 
-       <div className={postStyles.postImg}><Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /></div>
       <div className="container content">
         <div className="columns">
           <div className="column is-12">               
