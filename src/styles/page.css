@@ -1,6 +1,6 @@
 .content p, 
 ul li, 
-ol li{font-size: 1.25em}
+ol li{font-size: 1.25em; word-wrap:break-word}
 blockquote{
     background-image: url(../img/quote_e50de5.svg);
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ blockquote p {
     letter-spacing: -.3px;
 }
 code{
-    font-size: 0.8em;
+    font-size: 0.8em!important;
     background: #e5e7ea;
     padding: 5px;
     letter-spacing: 2px;

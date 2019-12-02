@@ -9,7 +9,7 @@
 	.content{margin-top:55%}
 }
 @media only screen and (max-width: 980px) {
-	section{padding:0 1.5rem}
+	.section{padding:0 1.5rem}
 }
 @media only screen and (max-width: 925px) {
 	.section .container.content{margin-top:50%}

@@ -20,7 +20,11 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 nav#header {margin-bottom:1rem;margin-top:1rem;background-color:transparent}
 .navbar-item, .navbar-link{font-size:1.25rem}
 .section .container{max-width:960px}
-
+.pagination .navbar-menu {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
 @media screen and (max-width: 1023px){
 	.navbar-menu {
 		box-shadow: rgba(35, 38, 52, 0.08) 0px 26px 50px 0px;
