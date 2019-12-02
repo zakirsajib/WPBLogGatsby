@@ -53,6 +53,7 @@ module.exports = {
         icon: 'src/img/main.jpg',
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

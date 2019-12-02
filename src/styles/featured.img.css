@@ -8,6 +8,9 @@
 @media only screen and (max-width: 1099px) {
 	.content{margin-top:55%}
 }
+@media only screen and (max-width: 980px) {
+	section{padding:0 1.5rem}
+}
 @media only screen and (max-width: 925px) {
 	.section .container.content{margin-top:50%}
 }
@@ -16,7 +19,6 @@
 }
 @media only screen and (max-width: 545px) {
 	.section .container.content{margin-top:30%}
-	.content{margin-top:10%}
 }
 @media only screen and (max-width: 480px) {
 	.section .container.content{margin-top:50%}

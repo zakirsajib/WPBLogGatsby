@@ -10,8 +10,6 @@ h1{text-transform: capitalize}
 }
 .postImg{
 	margin-bottom:50px;
-	margin-left:-1.5rem;
-	margin-right:-1.5rem;
 	position: absolute;
     top: 0;
     left: 0;
@@ -27,6 +25,6 @@ h1{text-transform: capitalize}
     background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.1)),to(rgba(0,0,0,.8)));
     background: linear-gradient(180deg,rgba(0,0,0,.1) 0,rgba(0,0,0,.8));
 }
-@media only screen and (max-width: 480px) {
-	.entryHeader h1{font-size:1.5rem!important}
+@media only screen and (max-width: 600px) {
+	.entryHeader h1{font-size:1.25rem!important}
 }
