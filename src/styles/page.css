@@ -1,15 +1,19 @@
+.section .container .content,
+.section .container.content{padding: 3rem 1.5rem;}
 .content p, 
 ul li, 
 ol li{font-size: 1.25em; word-wrap:break-word}
-blockquote{
+.content blockquote{
     background-image: url(../img/quote_e50de5.svg);
     background-repeat: no-repeat;
-    margin-top: 80px;
+    background-color: transparent;
+    border-left: 0;
+    margin-top: 40px;
     margin-bottom: 80px;
     padding-top: 48px;
     quotes:none;
 }
-blockquote p {
+.content blockquote p {
     font-size: 1.5em!important;
     font-weight: 400;
     letter-spacing: -.3px;
@@ -21,10 +25,19 @@ code{
     letter-spacing: 2px;
 }
 #pageTitle{
-	margin: -50% auto 0;
     position: absolute;
     left:0;
     right:0;
 	width: 100%;
-	text-align: center;
+    text-align: center;
+    display:grid;
+    align-items: center;
+    height: 50vh;
+    top:20%;
+}
+.index-module--pageImg--3iY_7 .gatsby-image-wrapper,
+.post-module--postImg--3Kcad .gatsby-image-wrapper{height:80vh;}
+
+@media screen and (max-width: 768px){
+    #mobileSection{padding: 0 0.5rem;}
 }

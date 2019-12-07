@@ -19,6 +19,7 @@ body{
 h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 nav#header {margin-bottom:1rem;margin-top:1rem;background-color:transparent}
 .navbar-item, .navbar-link{font-size:1.25rem}
+.section{padding: 1.5rem}
 .section .container{max-width:960px}
 .pagination .navbar-menu {
     display: flex;
@@ -31,10 +32,20 @@ nav#header {margin-bottom:1rem;margin-top:1rem;background-color:transparent}
 	}
 	.navbar-menu.is-active{
 		background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.1)),to(rgba(0,0,0,.4)));
-    	background: linear-gradient(180deg,rgba(0,0,0,.1) 0,rgba(0,0,0,.4));
+		background: linear-gradient(180deg,rgba(0,0,0,.1) 0,rgba(0,0,0,.4));
+		background-color:mediumvioletred;
+		position:fixed;
+		width:100%;
+		height:100%;
+		right:0;
+		top:0;
+		display:grid;
+		align-items:center;
 	}
+	.navbar-burger{z-index:10;background-color: rgba(0, 0, 0, 0.05);}
 	.navbar-item, .navbar-link{
-		color: #f9fafc
+		color: #f9fafc;
+		font-size:2.5em;
 	}
 	a.navbar-item.logo {
 		color: #000;

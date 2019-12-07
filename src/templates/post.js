@@ -4,13 +4,11 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
-
 import userConfig from '../../config'
 import Share from '../components/Share'
-import '../styles/featured.img.css'
 import postStyles from '../styles/post.module.css'
 
-let url = '';
+    let url
     if (typeof window !== `undefined`) {
       url = window.location.href;
     }
@@ -60,7 +58,7 @@ let url = '';
                 </div>
 		              ) : null}
               {userConfig.showShareButtons && (
-                <Share url={url} title={post.title} />
+               <Share url={url} title={post.title} />
 						  )}
               <div className="pagination is-centered" role="navigation" aria-label="pagination">
                   {previous && (
@@ -92,6 +90,7 @@ export const query = graphql`
       title
       content
       excerpt
+      link
       categories {
         name
         slug

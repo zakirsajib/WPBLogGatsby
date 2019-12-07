@@ -3,7 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 
 import github from '../img/github-icon.svg'
 import linkedin from '../img/linkedin-icon.svg'
-import instagram from '../img/instagram-icon.svg'
+//import instagram from '../img/instagram-icon.svg'
 import home from '../img/link-icon.svg'
 //import logo from '../img/main.jpg'
 import userConfig from '../../config'
@@ -97,16 +97,6 @@ class Navbar extends Component {
                     >
                       <span className="icon">
                         <img src={linkedin} alt="LinkedIn" />
-                      </span>
-                    </a>
-                    <a
-                      className="navbar-item"
-                      href={userConfig.social.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span className="icon">
-                        <img src={instagram} alt="Instagram" />
                       </span>
                     </a>
                   </div>

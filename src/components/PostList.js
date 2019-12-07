@@ -7,25 +7,34 @@ import '../styles/postList.css'
 
 import indexStyles from '../styles/index.module.css'
 
+let count = 0;
+
 export default class IndexPage extends React.Component {
   render() {
     const { posts, title} = this.props
 		
     return (
-      <section className="section">
+      <section className="section" id="mobileSection">
         <div className="container">
           <div className="columns" style={{paddingBottom: `15px`}}>
             <H2 style={{color: `#e0e1e2`}} dangerouslySetInnerHTML={{ __html: title}}></H2>
           </div>
+          
+
           {posts.map(({ node: post }) => (
             <div
               className="columns postList"
               key={post.id}
             >
-              <div className="column featuredImage">
-              <Link to={post.slug}><Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link>
+              <div className="column featuredImage" style={{order: count}}>
+              <Link to={post.slug}><Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link> 
               </div>
               <div className="column" id={indexStyles.postContent}>
+              <div className="postContentInner">
+              <span key={count += 1}></span>
+              {count == 2 ? (
+                <span key={count = 0}></span>
+              ): null }
               <H2>
                 <Link to={post.slug} dangerouslySetInnerHTML={{ __html: post.title}}></Link>
               </H2>
@@ -38,7 +47,7 @@ export default class IndexPage extends React.Component {
                <div className="readMore"> 
                <Link className="readMoreLink" to={post.slug}>
                   Read more
-               </Link></div>
+               </Link></div></div>
                </div>
               </div>
               </div>
