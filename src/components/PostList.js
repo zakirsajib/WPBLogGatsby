@@ -17,7 +17,7 @@ export default class IndexPage extends React.Component {
       <section className="section" id="mobileSection">
         <div className="container">
           <div className="columns" style={{paddingBottom: `15px`}}>
-            <H2 style={{color: `#e0e1e2`}} dangerouslySetInnerHTML={{ __html: title}}></H2>
+        <H2 style={{color: `#e0e1e2`}} dangerouslySetInnerHTML={{ __html: title}}></H2>
           </div>
           
 

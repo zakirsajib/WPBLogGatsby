@@ -38,6 +38,27 @@ code{
 .index-module--pageImg--3iY_7 .gatsby-image-wrapper,
 .post-module--postImg--3Kcad .gatsby-image-wrapper{height:80vh;}
 
+.content pre{
+    font-family: 'Maven Pro', sans-serif;
+	font-weight:500;
+    white-space:pre-line;
+}
+
+table {border-collapse: collapse;}
+table, th, td {border: 1px solid #ddd;}
+th, td {
+padding: 15px;
+text-align: left;
+}
+th, td {
+border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+th {
+background-color: #4CAF50;
+color: white;
+}
+
 @media screen and (max-width: 768px){
     #mobileSection{padding: 0 0.5rem;}
 }

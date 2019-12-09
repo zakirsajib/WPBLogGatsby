@@ -8,9 +8,10 @@ module.exports = {
     siteUrl: userConfig.siteUrl,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
+    `react-github-btn`,
     {
       resolve: 'gatsby-source-wordpress',
       options: {

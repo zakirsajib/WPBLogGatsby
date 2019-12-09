@@ -5,8 +5,20 @@ import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import userConfig from '../../config'
-import Share from '../components/Share'
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  PocketShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  PocketIcon,
+  EmailIcon
+} from 'react-share'
 import postStyles from '../styles/post.module.css'
+import ShareWrapper from '../components/Share'
 
     let url
     if (typeof window !== `undefined`) {
@@ -57,9 +69,57 @@ import postStyles from '../styles/post.module.css'
                   </ul>
                 </div>
 		              ) : null}
+             <ShareWrapper>
               {userConfig.showShareButtons && (
-               <Share url={url} title={post.title} />
+               <div className="Demo__some-network">
+                <FacebookShareButton url={url} quote={post.title}
+                className="Demo__some-network__share-button">
+                <FacebookIcon size={32} round={false} />
+                </FacebookShareButton>
+                </div>
+              )}
+             {userConfig.showShareButtons && (
+             <div className="Demo__some-network">
+             <TwitterShareButton url={url} title={post.title}
+                className="Demo__some-network__share-button">
+                <TwitterIcon size={32} round={false} />
+              </TwitterShareButton>
+              </div>
 						  )}
+              {userConfig.showShareButtons && (
+              <div className="Demo__some-network">
+              <LinkedinShareButton
+                url={url}
+                windowWidth={750}
+                windowHeight={600}
+                className="Demo__some-network__share-button">
+                <LinkedinIcon size={32} round={false} />
+              </LinkedinShareButton>
+              </div>
+              )}
+              {userConfig.showShareButtons && (
+              <div className="Demo__some-network">
+              <PocketShareButton
+                url={url}
+                subject={post.title}
+                className="Demo__some-network__share-button">
+                <PocketIcon size={32} round={false} />
+              </PocketShareButton>
+              </div>
+              )}
+              {userConfig.showShareButtons && (
+              <div className="Demo__some-network">
+              <EmailShareButton
+                url={url}
+                subject={post.title}
+                body="body"
+                className="Demo__some-network__share-button">
+                <EmailIcon size={32} round={false} />
+              </EmailShareButton>
+              </div>
+              )}
+              </ShareWrapper>
+              
               <div className="pagination is-centered" role="navigation" aria-label="pagination">
                   {previous && (
                     <Link to={`/${previous.slug}`} rel="prev" className="pagination-previous">← Previous post</Link>

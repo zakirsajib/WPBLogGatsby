@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Img from 'gatsby-image'
 import '../styles/page.css'
 import indexStyles from '../styles/index.module.css'
+import GitHubButton from 'react-github-btn'
 
 export const PageTemplate = ({ title, content, featureimage }) => {
   return (
@@ -13,6 +14,7 @@ export const PageTemplate = ({ title, content, featureimage }) => {
     <section className="section section--gradient">
       <div className="container" id="pageTitle">
         <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">{title}</h2>
+<GitHubButton href="https://github.com/zakirsajib" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @zakirsajib on GitHub">Follow @zakirsajib</GitHubButton>
       </div>  
       <div className="container">
         <div className="content" dangerouslySetInnerHTML={{ __html: content }}/>
