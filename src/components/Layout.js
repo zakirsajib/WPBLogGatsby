@@ -12,7 +12,11 @@ import Footer from './Footer'
 const TemplateWrapper = ({ children }) => (
   <div>
     <GlobalStyle />
-    <Helmet title={`${userConfig.name} | ${userConfig.title}`} />
+    <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+      <meta name="author" content={`${userConfig.author}`} />
+      <meta name="description" content={`${userConfig.description}`} />
+      <meta name="keywords" content={`${userConfig.keywords}`}></meta>
+    </Helmet>
     <Navbar />
     <div>{children}</div>
     <div><ScrollUpButton /></div>

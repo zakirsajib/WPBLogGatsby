@@ -31,7 +31,9 @@ import ShareWrapper from '../components/Share'
 
   return (
     <Layout>
-      <Helmet title={`${post.title} | ${userConfig.title}`} />
+      <Helmet title={`${post.title} | ${userConfig.title}`}>
+        <meta name="description" content={`${post.excerpt}`}/>
+      </Helmet>
       	<div className={postStyles.postImg}><Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /></div>
         <section className="section">
         <div className={postStyles.entryHeader}>
@@ -53,7 +55,7 @@ import ShareWrapper from '../components/Share'
                         {category.name}
                       </Link>
                       </li>
-		                    ))}
+		                  ))}
                   </ul>
                 </div>
 		              ) : null}

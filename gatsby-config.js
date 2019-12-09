@@ -41,6 +41,15 @@ module.exports = {
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,
       },
+    },
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: [
+          "https://www.google-analytics.com",
+          "https://fonts.googleapis.com"
+        ]
+      }
     },   
     {
       resolve: `gatsby-plugin-manifest`,

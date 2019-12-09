@@ -12,7 +12,9 @@ import GitHubButton from 'react-github-btn'
 export const PageTemplate = ({ title, content, featureimage }) => {
   return (
     <div>
-    <Helmet title={`${title} | ${userConfig.title}`} />
+    <Helmet title={`${title} | ${userConfig.title}`}>
+      <meta name="description" content={`${userConfig.testimonial}`} />
+    </Helmet>
     <div className={indexStyles.pageImg}><Img fluid={featureimage}/></div>
     <section className="section section--gradient">
       <div className="container" id="pageTitle">
