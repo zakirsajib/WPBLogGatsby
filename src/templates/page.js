@@ -1,8 +1,10 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Img from 'gatsby-image'
+import userConfig from '../../config'
 import '../styles/page.css'
 import indexStyles from '../styles/index.module.css'
 import GitHubButton from 'react-github-btn'
@@ -10,6 +12,7 @@ import GitHubButton from 'react-github-btn'
 export const PageTemplate = ({ title, content, featureimage }) => {
   return (
     <div>
+    <Helmet title={`${title} | ${userConfig.title}`} />
     <div className={indexStyles.pageImg}><Img fluid={featureimage}/></div>
     <section className="section section--gradient">
       <div className="container" id="pageTitle">
