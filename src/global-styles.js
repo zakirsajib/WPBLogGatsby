@@ -24,7 +24,8 @@ nav#header {margin-bottom:1rem;margin-top:1rem;background-color:transparent}
 .pagination .navbar-menu {
     display: flex;
     flex-grow: 1;
-    flex-shrink: 0;
+	flex-shrink: 0;
+	z-index:0;
 }
 @media screen and (max-width: 1023px){
 	.navbar-menu {

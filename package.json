@@ -37,6 +37,7 @@
     "react-dom": "^16.9.0",
     "react-github-btn": "^1.1.1",
     "react-helmet": "^5.2.1",
+    "react-scroll-up-button": "^1.6.4",
     "react-share": "^3.0.1",
     "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.6",
