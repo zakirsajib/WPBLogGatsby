@@ -19,15 +19,11 @@ export default class IndexPage extends React.Component {
           <div className="columns" style={{paddingBottom: `15px`}}>
         <H2 style={{color: `#e0e1e2`}} dangerouslySetInnerHTML={{ __html: title}}></H2>
           </div>
-          
-
           {posts.map(({ node: post }) => (
-            <div
-              className="columns postList"
-              key={post.id}
-            >
+            <div className="columns postList" key={post.id}>
               <div className="column featuredImage" style={{order: count}}>
-              <Link to={post.slug}><Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link> 
+              <Link to={post.slug}>
+            <Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link> 
               </div>
               <div className="column" id={indexStyles.postContent}>
               <div className="postContentInner">

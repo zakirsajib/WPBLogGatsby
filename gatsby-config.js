@@ -16,23 +16,17 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'zsbloggatsby.wordpress.com',
+        baseUrl: 'zakirsajib.000webhostapp.com',
         // WP.com sites set to true, WP.org set to false
-        hostingWPCOM: true,
+        hostingWPCOM: false,
         // The protocol. This can be http or https.
         protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
         perPage: 50,
         concurrentRequests: 10,
-        auth: {
-	        wpcom_app_clientSecret: "I9vu5RxuYCaOSRrIqIObKGp9LYuIHl8UClkxbmINrfXtQU4vpFf9ymiKu4dUKjqb",
-			    wpcom_app_clientId: "67424",
-			    wpcom_user: "zakirsajib@gmail.com",
-          wpcom_pass: "Ncc007008@",
-        },
         searchAndReplaceContentUrls: {
-          sourceUrl: "https://zsbloggatsby.wordpress.com",
+          sourceUrl: "https://zakirsajib.000webhostapp.com",
           replacementUrl: "https://nirvana.netlify.com"
         },
         plugins: [
