@@ -38,12 +38,18 @@ import ShareWrapper from '../components/Share'
         <section className="section">
         <div className={postStyles.entryHeader}>
         <h1 className="title is-size-2 has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: post.title}}/>
-        <p style={{color: `#f9fafc`}}>{' '}{post.date} - {post.fields.readingTime.text}</p>
+      <p style={{color: `#f9fafc`}}>{' '}{post.date} - {post.fields.readingTime.text}</p>
+      {post.date != post.modified ? (
+      <p style={{color: `#f9fafc`}}><b>Last updated on:</b>{' '}{post.modified}</p>
+      ): null }
        </div> 
       <div className="container content">
         <div className="columns">
           <div className="column is-12">               
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div style={{ marginTop: `4rem` }}>
+          <p style={{color: `#272822`}}><b>Last updated on:</b>{' '}{post.modified}</p>
+            </div>
             <div style={{ marginTop: `4rem` }}>
               {post.categories && post.categories.length ? (
                   <div>
@@ -148,7 +154,8 @@ export const query = graphql`
       }
     }
     wordpressPost(slug: { eq: $slug }) {
-      date(formatString: "MMMM DD, YYYY")
+      date(formatString: "MMMM DD, YYYY h:mma")
+      modified(formatString: "MMMM DD, YYYY h:mma")
       title
       content
       excerpt
