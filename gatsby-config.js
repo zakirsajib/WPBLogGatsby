@@ -25,10 +25,19 @@ module.exports = {
         useACF: false,
         perPage: 50,
         concurrentRequests: 10,
-        searchAndReplaceContentUrls: {
-          sourceUrl: "https://zakirsajib.000webhostapp.com",
-          replacementUrl: "https://nirvana.netlify.com"
-        },
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+        ],
+        //searchAndReplaceContentUrls: {
+        //  sourceUrl: "https://zakirsajib.000webhostapp.com",
+        //  replacementUrl: "https://nirvana.netlify.com"
+        //},
         plugins: [
           `gatsby-wordpress-reading-time`,
         ],
@@ -44,6 +53,23 @@ module.exports = {
           "https://fonts.googleapis.com"
         ]
       }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",             
+              inlineCodeMarker: null,             
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+        ],
+      },
     },   
     {
       resolve: `gatsby-plugin-manifest`,
