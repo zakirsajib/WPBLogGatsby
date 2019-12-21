@@ -16,6 +16,17 @@ module.exports = {
         siteUrl: `https://nirvana.netlify.com`,
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+          },
+          `gatsby-remark-lazy-load`,
+        ]
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `react-github-btn`,

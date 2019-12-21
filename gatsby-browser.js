@@ -1,4 +1,5 @@
 import "./src/styles/global.css"
+import 'lazysizes'
 require("prismjs/themes/prism-okaidia.css")
 
 export const onServiceWorkerUpdateReady = () => {

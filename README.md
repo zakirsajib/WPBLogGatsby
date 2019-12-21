@@ -27,6 +27,9 @@ Demo: https://nirvana.netlify.com
 * Pagination both index and single page
 * Implemented menu and burger menu
 * Integrated reading time
+* Sitemap
+* Canonical url
+* Lazyload
 
 ### To Be Done
 
@@ -43,10 +46,6 @@ Demo: https://nirvana.netlify.com
 
 ### Known Limitations
 
-* While gatsby build or gatsby build command, there is an error message shows up though it doesn't effect the functionality of the site. I believe its related to WordPress.com restrictions. Error message: 
-`Path: /wp/v2/sites/mysitename.wordpress.com/jetpack-global-styles?per_page=50&page=1`
-`The server response was "403 Forbidden"`
-`Inner exception message: "Sorry, you are not allowed to do that."`
 * This is based on the [netlify starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) which uses [bulma](https://bulma.io). This adds 150KB to every built page.
 * Your WordPress site must have at least 1 post with 1 tag, or the starter will crash
 * Nested pages / categories will not render with nested pages
