@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import H1 from './H1'
 import H2 from './H2'
 import '../styles/postList.css'
 
@@ -16,9 +17,6 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section" id="mobileSection">
         <div className="container">
-          <div className="columns" style={{paddingBottom: `15px`}}>
-        <H2 style={{color: `#e0e1e2`}} dangerouslySetInnerHTML={{ __html: title}}></H2>
-          </div>
           {posts.map(({ node: post }) => (
             <div className="columns postList" key={post.id}>
               <div className="column featuredImage" style={{order: count}}>

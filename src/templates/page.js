@@ -13,12 +13,12 @@ export const PageTemplate = ({ title, content, featureimage }) => {
   return (
     <div>
     <Helmet title={`${title} | ${userConfig.title}`}>
-      <meta name="description" content={`${userConfig.testimonial}`} />
+      <meta name="description" content={`${content}`} />
     </Helmet>
     <div className={indexStyles.pageImg}><Img fluid={featureimage}/></div>
     <section className="section section--gradient">
       <div className="container" id="pageTitle">
-        <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">{title}</h2>
+        <h1 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">{title}</h1>
 <GitHubButton href="https://github.com/zakirsajib" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @zakirsajib on GitHub">Follow @zakirsajib</GitHubButton>
       </div>  
       <div className="container">

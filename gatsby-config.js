@@ -8,7 +8,14 @@ module.exports = {
     siteUrl: userConfig.siteUrl,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://nirvana.netlify.com`,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `react-github-btn`,
@@ -23,7 +30,7 @@ module.exports = {
         protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
-        perPage: 50,
+        perPage: userConfig.postsPerPage,
         concurrentRequests: 10,
         includedRoutes: [
           "**/categories",
@@ -34,10 +41,6 @@ module.exports = {
           "**/taxonomies",
           "**/users",
         ],
-        //searchAndReplaceContentUrls: {
-        //  sourceUrl: "https://zakirsajib.000webhostapp.com",
-        //  replacementUrl: "https://nirvana.netlify.com"
-        //},
         plugins: [
           `gatsby-wordpress-reading-time`,
         ],

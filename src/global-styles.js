@@ -50,6 +50,7 @@ nav#header {margin-bottom:1rem;margin-top:1rem;background-color:transparent}
 	}
 	a.navbar-item.logo {
 		color: #000;
+		z-index:1;
 	}
 }
 

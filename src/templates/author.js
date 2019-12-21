@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import H1 from '../components/H1'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 
@@ -21,6 +22,11 @@ const Author = props => {
   return (
     <Layout>
       <Helmet title={`${name} | ${siteTitle}`} />
+      <section className="section">
+        <div className="container">
+          <H1 style={{color: `#e0e1e2`}} dangerouslySetInnerHTML={{ __html: title}}></H1>
+        </div>
+      </section>
       <PostList posts={posts} title={title} />
     </Layout>
   )

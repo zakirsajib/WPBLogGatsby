@@ -1,6 +1,6 @@
 module.exports = {
   name: 'Nirvana',
-  title: 'Blog of Zakir Sajib', // Required
+  title: 'Blog of Nirvana', // Required
   author: 'Zakir Sajib', // Required
   description: 'I am a freelance developer with several years of experience working as a WordPress expert at Codeable and Upwork and has helped many clients around the world by building their online presence through high quality custom themes and plugins.',
   keywords: 'Node.js, React.js, Gatsby.js, Blog, Javascript, MacOSx',
