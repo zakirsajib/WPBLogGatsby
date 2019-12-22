@@ -20,6 +20,15 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `react-github-btn`,
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#FD461E`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
+    {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.

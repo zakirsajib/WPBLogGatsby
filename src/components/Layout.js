@@ -13,6 +13,7 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <GlobalStyle />
     <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+    <meta name="google-site-verification" content="MGH2iJ6T5_R_hxmCHeikDehPlc7Ttn6eL_v-Owv0718" />
       <meta name="author" content={`${userConfig.author}`} />
       <meta name="description" content={`${userConfig.description}`} />
       <meta name="keywords" content={`${userConfig.keywords}`}></meta>
