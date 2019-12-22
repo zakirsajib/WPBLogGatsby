@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#FD461E`,
+        color: userConfig.primaryColor,
         // Disable the loading spinner.
         showSpinner: false,
       },
@@ -66,23 +66,23 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",             
-              inlineCodeMarker: null,             
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-            },
-          },
-        ],
-      },
-    },   
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: `gatsby-remark-prismjs`,
+    //         options: {
+    //           classPrefix: "language-",             
+    //           inlineCodeMarker: null,             
+    //           aliases: {},
+    //           showLineNumbers: false,
+    //           noInlineHighlight: false,
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },   
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -91,6 +91,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
           },
           `gatsby-remark-lazy-load`,
+          `gatsby-remark-prismjs`,
         ]
       }
     },
@@ -110,7 +111,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-152596464-1`,
+        trackingId: userConfig.googleAnalyticsID,
       },
     },
     'gatsby-plugin-sharp',

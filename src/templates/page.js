@@ -9,7 +9,7 @@ import '../styles/page.css'
 import indexStyles from '../styles/index.module.css'
 import GitHubButton from 'react-github-btn'
 
-export const PageTemplate = ({ title, content, featureimage }) => {
+export const PageTemplate = ({ title, content, slug, featureimage }) => {
   return (
     <div>
     <Helmet title={`${title} | ${userConfig.title}`}>
@@ -23,6 +23,25 @@ export const PageTemplate = ({ title, content, featureimage }) => {
       </div>  
       <div className="container">
         <div className="content" dangerouslySetInnerHTML={{ __html: content }}/>
+        {slug == 'contact' ? (
+          <div style={{ marginTop: `4rem`, marginBottom: `4em` }}>
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+              <p>
+                <label>Name: <input type="text" name="name" /></label>   
+              </p>
+              <p>
+                <label>Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+              <input type="hidden" name="bot-field" />
+            </form>
+          </div>
+        ): null }
       </div>
     </section>
     </div>
@@ -42,7 +61,8 @@ const Page = ({ data }) => {
       <PageTemplate 
       title={page.title} 
       content={page.content}
-	  featureimage={page.featured_media.localFile.childImageSharp.fluid}/>
+      slug={page.slug}
+	    featureimage={page.featured_media.localFile.childImageSharp.fluid}/>
     </Layout>
   )
 }
@@ -58,6 +78,7 @@ export const pageQuery = graphql`
     wordpressPage(id: { eq: $id }) {
       title
       content
+      slug
       featured_media{
 	    localFile{
 		    childImageSharp{
