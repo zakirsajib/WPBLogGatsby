@@ -19,6 +19,7 @@ import {
 } from 'react-share'
 import postStyles from '../styles/post.module.css'
 import ShareWrapper from '../components/Share'
+import JustComments from 'gatsby-plugin-just-comments'
 
     let url
     if (typeof window !== `undefined`) {
@@ -136,9 +137,12 @@ import ShareWrapper from '../components/Share'
                   <Link to={`/${next.slug}`} rel="next" className="pagination-next">Next post →</Link>
                   )}
               </div>
-
-
-
+              <JustComments 
+                recaptcha="true"
+                disableanonymouslogin="false"
+                disableseo="true"
+                apikey={userConfig.justCommentsAPI} 
+              />
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@
     "gatsby-awesome-pagination": "^0.3.3",
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-google-analytics": "^2.1.28",
+    "gatsby-plugin-just-comments": "^0.2.3",
     "gatsby-plugin-lodash": "^3.1.7",
     "gatsby-plugin-manifest": "^2.2.29",
     "gatsby-plugin-netlify": "^2.1.12",

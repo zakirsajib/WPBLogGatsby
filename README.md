@@ -30,11 +30,11 @@ Demo: https://nirvana.netlify.com
 * Sitemap
 * Canonical url
 * Lazyload
+* Contact form
+* Comments by just comments
 
 ### To Be Done
 
-* Facebook comments
-* Contact form
 * Conditional check on featured image
 * Related posts
 * Search functionality
