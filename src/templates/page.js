@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Form from '../components/Contact'
 import Img from 'gatsby-image'
 import userConfig from '../../config'
 import '../styles/page.css'
@@ -24,28 +25,8 @@ export const PageTemplate = ({ title, content, slug, featureimage }) => {
       <div className="container">
         <div className="content" dangerouslySetInnerHTML={{ __html: content }}/>
         {slug == 'contact' ? (
-          <div style={{ marginTop: `4rem`, marginBottom: `4em` }}>
-            <form 
-              name="contact" 
-              method="POST" 
-              data-netlify-honeypot="bot-field" 
-              data-netlify="true"
-            >
-            <input name="form-name" type="hidden" value="contact"/>
-            <p hidden><label>Don’t fill this out: <input name="bot-field"/></label></p>
-              <p>
-                <label>Name: <input type="text" name="name" /></label>   
-              </p>
-              <p>
-                <label>Email: <input type="email" name="email" /></label>
-              </p>
-              <p>
-                <label>Message: <textarea name="message"></textarea></label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form>
+          <div className="contactForm" style={{ marginTop: `4rem`, marginBottom: `4em` }}>
+          <Form />
           </div>
         ): null }
       </div>

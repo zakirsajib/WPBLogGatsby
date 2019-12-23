@@ -37,7 +37,7 @@ code{
 }
 .index-module--pageImg--3iY_7 .gatsby-image-wrapper,
 .post-module--postImg--3Kcad .gatsby-image-wrapper{height:80vh;}
-
+.contactForm{margin-left:4em;margin-right:4em;}
 table {border-collapse: collapse;}
 table, th, td {border: 1px solid #ddd;}
 th, td {
@@ -52,7 +52,9 @@ th {
 background-color: #4CAF50;
 color: white;
 }
-
+@media screen and (max-width: 1023px){
+    .contactForm{margin-left:0;margin-right:0;}
+}
 @media screen and (max-width: 768px){
     #mobileSection{padding: 0 0.5rem;}
 }
