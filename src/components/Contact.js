@@ -34,7 +34,7 @@ class Form extends Component {
         <div className="field">
             <label className="label">Message</label>
             <div className="control">
-                <textarea className="textarea" placeholder="Message"></textarea>
+        <textarea className="textarea" placeholder="Message" name="message"></textarea>
             </div>
         </div>
         {/* Submit button */}
