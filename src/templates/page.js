@@ -26,6 +26,8 @@ export const PageTemplate = ({ title, content, slug, featureimage }) => {
         {slug == 'contact' ? (
           <div style={{ marginTop: `4rem`, marginBottom: `4em` }}>
             <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" />
+            </label></p>
               <p>
                 <label>Name: <input type="text" name="name" /></label>   
               </p>
@@ -38,7 +40,6 @@ export const PageTemplate = ({ title, content, slug, featureimage }) => {
               <p>
                 <button type="submit">Send</button>
               </p>
-              <input type="hidden" name="bot-field" />
             </form>
           </div>
         ): null }
