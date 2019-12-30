@@ -6,6 +6,8 @@ and modified to use WordPress instead of netlify-cms, using the [gatsby-source-w
 
 Demo: https://nirvana.netlify.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43eb90a5-e89b-452e-b7b2-358f951320b6/deploy-status)](https://app.netlify.com/sites/nirvana/deploys)
+
 ## Use It Now
 
     gatsby new NAME https://github.com/zakirsajib/WPBLogGatsby
@@ -66,3 +68,4 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 ## Contributors
 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43eb90a5-e89b-452e-b7b2-358f951320b6/deploy-status)](https://app.netlify.com/sites/nirvana/deploys)

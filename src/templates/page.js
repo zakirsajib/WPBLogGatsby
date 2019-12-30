@@ -16,7 +16,10 @@ export const PageTemplate = ({ title, content, slug, featureimage }) => {
     <Helmet title={`${title} | ${userConfig.title}`}>
       <meta name="description" content={`${content}`} />
     </Helmet>
-    <div className={indexStyles.pageImg}><Img fluid={featureimage}/></div>
+    
+    {featureimage &&
+    <div className={indexStyles.pageImg}><Img fluid={featureimage} alt={title}/></div>
+    }
     <section className="section section--gradient">
       <div className="container" id="pageTitle">
         <h1 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">{title}</h1>
@@ -25,7 +28,7 @@ export const PageTemplate = ({ title, content, slug, featureimage }) => {
       <div className="container">
         <div className="content" dangerouslySetInnerHTML={{ __html: content }}/>
         {slug == 'contact' ? (
-          <div className="contactForm" style={{ marginTop: `4rem`, marginBottom: `4em` }}>
+          <div className="contactForm" style={{ marginBottom: `4em` }}>
           <Form />
           </div>
         ): null }
@@ -49,7 +52,8 @@ const Page = ({ data }) => {
       title={page.title} 
       content={page.content}
       slug={page.slug}
-	    featureimage={page.featured_media.localFile.childImageSharp.fluid}/>
+      featureimage={page.featured_media.localFile.childImageSharp.fluid}
+      />
     </Layout>
   )
 }

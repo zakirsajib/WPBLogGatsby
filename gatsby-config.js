@@ -20,6 +20,25 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `react-github-btn`,
     {
+      resolve: `gatsby-plugin-humans-txt`,
+      options: {
+        team: [
+          {
+            Developer: userConfig.author,
+            GitHub: `zakirsajib`
+          }
+        ],
+        thanks: [`Gatsby`, `Node`],
+        site: {
+          'Last update': `2019/12/25`,
+          Standards: `JavaScript`,
+          Components: `humans-generator`,
+          Softwares: `Visual Studio Code`
+        },
+        note: `Made in Bangladesh.`
+      }
+    },
+    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
@@ -116,6 +135,12 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/img/`,
+      },
+    },
     {
       // Removes unused css rules
       resolve:'gatsby-plugin-purgecss',
