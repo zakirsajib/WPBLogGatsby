@@ -81,10 +81,12 @@ module.exports = {
       options: {
         domains: [
           "https://www.google-analytics.com",
-          "https://fonts.googleapis.com"
+          "https://fonts.googleapis.com",
+          "https://fonts.gstatic.com"
         ]
       }
     },
+    'gatsby-plugin-preload-link-crossorigin',
     // {
     //   resolve: `gatsby-transformer-remark`,
     //   options: {
