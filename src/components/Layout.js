@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children }) => (
     <div>{children}</div>
     <div><ScrollUpButton /></div>
     <Footer>
-      <p>© 2019 Zakir Sajib. All Rights Reserved.</p>
+      <p>© 2019 - 2020 Zakir Sajib. All Rights Reserved.</p>
       <p>Built with Gatsby - datasource is WordPress - code on gitHub - hosted on Netlify</p>
     </Footer>
   </div>
