@@ -1,8 +1,17 @@
 .section .container .content,
-.section .container.content{padding: 3rem 1.5rem;}
+.section .container.content{
+	padding: 3rem 1.5rem;
+}
 .content p, 
 ul li, 
-ol li{font-size: 1.25em; word-wrap:break-word}
+ol li{
+	font-size: 1.125em; word-wrap:break-word;
+}
+.content a:hover{
+	color: #fff;
+    padding: 5px 0;
+    background-color: #6bc76b;
+}
 .content blockquote{
     background-image: url(../img/quote_e50de5.svg);
     background-repeat: no-repeat;
@@ -20,9 +29,11 @@ ol li{font-size: 1.25em; word-wrap:break-word}
 }
 code{
     font-size: 0.8em!important;
-    background: #e5e7ea;
-    padding: 5px;
+    background: #f9f9f9;
+    padding: 2.5px 5px;
+    color:#000;
     letter-spacing: 2px;
+    border: 1px solid #f3f3f4;
 }
 #pageTitle{
     position: absolute;
@@ -37,20 +48,33 @@ code{
 }
 .index-module--pageImg--3iY_7 .gatsby-image-wrapper,
 .post-module--postImg--3Kcad .gatsby-image-wrapper{height:80vh;}
-.contactForm{margin-left:4em;margin-right:4em;}
-table {border-collapse: collapse;}
-table, th, td {border: 1px solid #ddd;}
-th, td {
-padding: 15px;
-text-align: left;
+.contactForm{
+	margin-left:4em;
+	margin-right:4em;
+}
+.wp-block-preformatted{
+	background-color: #f1f1d8;
+	margin-bottom: 3em!important;
+}
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 1px solid #ddd;
 }
 th, td {
-border-bottom: 1px solid #ddd;
+	padding: 15px;
+	text-align: left;
 }
-tr:nth-child(even) {background-color: #f2f2f2;}
+th, td {
+	border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
 th {
-background-color: #4CAF50;
-color: white;
+	background-color: #4CAF50;
+	color: #fff;
 }
 @media screen and (max-width: 1023px){
     .contactForm{margin-left:0;margin-right:0;}

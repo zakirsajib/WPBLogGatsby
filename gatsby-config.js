@@ -150,9 +150,9 @@ module.exports = {
         // Activates purging in gatsby develop
         develop: false,
         // Ignore
-        ignore: ['styles/page.css'],
+        ignore: [],
         // Purge only the main css file
-        purgeOnly: ['/all.sass','styles/global.css','styles/index-module.css','styles/post-module.css', 'styles/postList.css'],
+        purgeOnly: ['/all.sass','styles/'],
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array

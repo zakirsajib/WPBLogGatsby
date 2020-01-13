@@ -24,7 +24,10 @@ import JustComments from 'gatsby-plugin-just-comments'
     let url
     if (typeof window !== `undefined`) {
       url = window.location.href;
+      require("smooth-scroll")('a[href*="#"]')
     }
+    
+
 
   export default props => {
     const post = props.data.wordpressPost;
