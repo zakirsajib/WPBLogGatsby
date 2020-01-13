@@ -150,7 +150,7 @@ module.exports = {
         // Activates purging in gatsby develop
         develop: false,
         // Ignore
-        ignore: [],
+        ignore: ['styles/page.css'],
         // Purge only the main css file
         purgeOnly: ['/all.sass','styles/'],
       },
