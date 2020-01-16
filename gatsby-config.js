@@ -125,7 +125,7 @@ module.exports = {
         background_color: '#f9fafc',
         theme_color: userConfig.primaryColor,
         display: 'minimal-ui',
-        icon: 'src/img/main.jpg',
+        icon: 'src/img/nirvana.svg',
       },
     },
     'gatsby-plugin-offline',

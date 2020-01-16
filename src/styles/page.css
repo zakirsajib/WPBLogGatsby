@@ -12,6 +12,11 @@ ol li{
     padding: 5px 0;
     background-color: #6bc76b;
 }
+.content .pagination-previous:hover, 
+.content .pagination-next:hover{
+	padding-left: 0.75em;
+    padding-right: 0.75em;
+}
 .content blockquote{
     background-image: url(../img/quote_e50de5.svg);
     background-repeat: no-repeat;
@@ -55,6 +60,7 @@ code{
 .wp-block-preformatted{
 	background-color: #f1f1d8;
 	margin-bottom: 3em!important;
+	padding: 1.25em 1.5em;
 }
 table {
 	border-collapse: collapse;
