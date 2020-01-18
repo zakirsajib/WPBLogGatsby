@@ -9,7 +9,8 @@ module.exports = {
   showShareButtons: true,
   postsPerPage: 5, // Required
   googleAnalyticsID: 'UA-152596464-1',
-  justCommentsAPI: 'bd890018-373c-4fe5-bd05-56ff01c65ead',
+  facebookAPPID: '1819085524892588',
+  facebookAPPSecret: '202beeeed74b7427cdbb44d3f48d599c',
   social: {
     website: 'https://zakirsajib.netlify.com',
     github: 'https://github.com/zakirsajib',

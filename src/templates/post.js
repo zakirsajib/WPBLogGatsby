@@ -19,7 +19,7 @@ import {
 } from 'react-share'
 import postStyles from '../styles/post.module.css'
 import ShareWrapper from '../components/Share'
-import JustComments from 'gatsby-plugin-just-comments'
+import { FacebookProvider, Comments } from 'react-facebook'
 
     let url
     if (typeof window !== `undefined`) {
@@ -140,12 +140,9 @@ import JustComments from 'gatsby-plugin-just-comments'
                   <Link to={`/${next.slug}`} rel="next" className="pagination-next">Next post →</Link>
                   )}
               </div>
-              <JustComments 
-                recaptcha="true"
-                disableanonymouslogin="false"
-                disableseo="true"
-                apikey={userConfig.justCommentsAPI} 
-              />
+              <FacebookProvider appId={userConfig.facebookAPPID}>
+			  	<Comments href="https://nirvana.netlify.com" />
+			  </FacebookProvider>
             </div>
           </div>
         </div>
