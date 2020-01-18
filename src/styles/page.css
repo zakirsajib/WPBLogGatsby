@@ -84,6 +84,10 @@ th {
 }
 @media screen and (max-width: 1023px){
     .contactForm{margin-left:0;margin-right:0;}
+    .section .container.content, 
+    .section .container .content{padding: 3rem 0;}
+    .content figure,
+    .content blockquote{ margin-left: 0; margin-right: 0;}
 }
 @media screen and (max-width: 768px){
     #mobileSection{padding: 0 0.5rem;}
