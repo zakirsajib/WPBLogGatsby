@@ -59,7 +59,7 @@ module.exports = {
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
         perPage: userConfig.postsPerPage,
-        concurrentRequests: 100,
+        concurrentRequests: 10,
         includedRoutes: [
           "**/categories",
           "**/posts",
