@@ -39,6 +39,15 @@ module.exports = {
       }
     },
     {
+      	resolve: `gatsby-plugin-google-fonts`,
+      	options: {
+	        fonts: [
+	           `Maven+Pro\:400, 500, 700`
+	        ],
+	        display: 'swap'
+	    },
+    },
+    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.

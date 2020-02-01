@@ -5,8 +5,6 @@ const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
 
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&display=swap');
-
 html {box-sizing:border-box}
 
 body{
