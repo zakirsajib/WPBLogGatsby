@@ -20,21 +20,21 @@ class Form extends Component {
         <div className="field">
             <label className="label">Name</label>
             <div className="control">
-                <input className="input" type="text" placeholder="Name" name="name" />
+                <input className="input" type="text" placeholder="Name" name="name" required="required" />
             </div>
         </div>
         {/* Email field */}
         <div className="field">
             <label className="label">Email</label>
             <div className="control">
-                <input className="input" type="email" placeholder="@hello" name="email" />
+                <input className="input" type="email" placeholder="@hello" name="email" required="required" />
             </div>
         </div>
         {/* Message textarea */}
         <div className="field">
             <label className="label">Message</label>
             <div className="control">
-        <textarea className="textarea" placeholder="Message" name="message"></textarea>
+        <textarea className="textarea" placeholder="Message" name="message" required="required"></textarea>
             </div>
         </div>
         {/* Submit button */}
