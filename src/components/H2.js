@@ -11,6 +11,9 @@ const H2 = styled.h2`
   @media only screen and (max-width: 768px) {
 	  font-size: 4.341288782816229vw;
   }
+  @media only screen and (max-width: 568px) {
+	  font-size: 6.341288782816229vw;
+  }
   
 `;
 
