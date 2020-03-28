@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import github from '../img/github-icon.svg'
@@ -92,3 +93,4 @@ const Navbar = () => (
 )
 
 export default Navbar
+*/

@@ -60,15 +60,21 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'zakirsajib.000webhostapp.com',
+        baseUrl: 'zsbloggatsby.wordpress.com',
         // WP.com sites set to true, WP.org set to false
-        hostingWPCOM: false,
+        hostingWPCOM: true,
         // The protocol. This can be http or https.
         protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
         perPage: userConfig.postsPerPage,
         concurrentRequests: 100,
+        auth: {
+	        wpcom_app_clientSecret: "I9vu5RxuYCaOSRrIqIObKGp9LYuIHl8UClkxbmINrfXtQU4vpFf9ymiKu4dUKjqb",
+			wpcom_app_clientId: "67424",
+			wpcom_user: "zakirsajib@gmail.com",
+			wpcom_pass: "Ncc007008@",
+        },
         includedRoutes: [
           "**/categories",
           "**/posts",
@@ -149,7 +155,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/img/`,
+	      name: "image",
+		  path: `${__dirname}/src/img/`,
       },
     },
     {

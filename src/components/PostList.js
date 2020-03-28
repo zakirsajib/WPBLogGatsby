@@ -20,8 +20,9 @@ export default class IndexPage extends React.Component {
           {posts.map(({ node: post }) => (
             <div className="columns postList" key={post.id}>
               <div className="column featuredImage" style={{order: count}}>
-              <Link to={post.slug}>
-            <Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link> 
+              	<Link to={post.slug}>
+			  		<Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/>
+			  	</Link> 
               </div>
               <div className="column" id={indexStyles.postContent}>
               <div className="postContentInner">
@@ -34,7 +35,7 @@ export default class IndexPage extends React.Component {
               </H2>
               <p style={{marginBottom: `15px`}}>{post.fields.readingTime.text}</p>
               <div>              
-              <div dangerouslySetInnerHTML={{ __html: post.excerpt}}/>
+              	<div className="post-excerpt" dangerouslySetInnerHTML={{ __html: post.excerpt}}/>
               <div className={indexStyles.postMeta}>
               <div className="postMetaDetails">  
             <div className="publishedDate"><small>Published on {post.date}</small></div>
