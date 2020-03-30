@@ -28,19 +28,28 @@
 	font-weight: 700;
 }
 
+.post-excerpt p{
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+	line-height: 1.25em;
+}
+
+/*
 @media only screen and (min-width: 769px) {
 	.post-excerpt p{
-		font-size: 1.15vw;
+		font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320))); 1.15vw;
 		line-height: 1.5em;
 	}
 }
+*/
 @media only screen and (max-width: 768px) {
     .featuredImage{
 	    text-align: center
     }
+/*
     .post-excerpt p{
 		font-size: 3.25vw;
 	}
+*/
 	.pagination .navbar-item{
 		font-size: 5.25vw;
 	}

@@ -4,7 +4,7 @@
 	width: calc(100% - 40px);
 }
 #postContent{position: relative;padding:0;}
-#postContent h2 a{color:#3e465b}
+#postContent h2 a{color:#3e465b; display: block;}
 #postContent h2 a:hover{border-bottom:1px solid}
 .pageImg{
     margin-top: -6em;

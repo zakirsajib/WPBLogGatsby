@@ -5,7 +5,7 @@
 .content p, 
 ul li, 
 ol li{
-	font-size: 1.5em; 
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320))); 
 	word-wrap:break-word;
 }
 .content a:hover{
