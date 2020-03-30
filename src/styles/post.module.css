@@ -27,6 +27,7 @@ h1{text-transform: capitalize}
 .pagination{
 	margin-bottom: 5em;
 }
+/* purgecss ignore */
 progress{
 	appearance: none;
 	-moz-appearance: none;
