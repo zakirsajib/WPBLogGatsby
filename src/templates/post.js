@@ -136,7 +136,7 @@ import { FacebookProvider, Comments } from 'react-facebook'
               )}
               </ShareWrapper>
               
-              <div className="pagination is-centered" role="navigation" aria-label="pagination">
+              <div className={"pagination is-centered" + " " + postStyles.pagination} role="navigation" aria-label="pagination">
                   {previous && (
                     <Link to={`/${previous.slug}`} rel="prev" className="pagination-previous">← Previous post</Link>
                   )}
