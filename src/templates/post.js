@@ -5,6 +5,7 @@ import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import userConfig from '../../config'
+import ReadingProgress from 'react-reading-progress'
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -38,6 +39,8 @@ import { FacebookProvider, Comments } from 'react-facebook'
       <Helmet title={`${post.title} | ${userConfig.title}`}>
         <meta name="description" content={`${post.excerpt}`}/>
       </Helmet>
+      	
+      <ReadingProgress targetEl="#post-content" />	
       	<div className={postStyles.postImg}><Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /></div>
         <section className="section">
         <div className={postStyles.entryHeader}>
@@ -47,11 +50,12 @@ import { FacebookProvider, Comments } from 'react-facebook'
       <p style={{color: `#f9fafc`}}><b>Last updated on:</b>{' '}{post.modified}</p>
       ): null }
        </div> 
-      <div className="container content">
+      
+      <div className="container content" id="post-content">
         <div className="columns">
           <div className="column is-12">               
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
-            <div style={{ marginTop: `4rem` }}>
+          <div style={{ marginTop: `4rem` }}>
           <p style={{color: `#272822`}}><b>Last updated on:</b>{' '}{post.modified}</p>
             </div>
             <div style={{ marginTop: `4rem` }}>
