@@ -7,13 +7,12 @@ h1{text-transform: capitalize}
     text-align: center;
     display:grid;
     align-items: center;
-/*     height: 50vh; */
     top:20%;
 }
 .postImg{
     margin-top: -6em;
     position: relative;
-    height: 80vh;;
+    height: 50vh;;
 }
 .postImg:after {
     position: absolute;
@@ -24,4 +23,7 @@ h1{text-transform: capitalize}
     content: "";
     background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.1)),to(rgba(0,0,0,.8)));
     background: linear-gradient(180deg,rgba(0,0,0,.1) 0,rgba(0,0,0,.8));
+}
+.pagination{
+	margin-bottom: 5em;
 }

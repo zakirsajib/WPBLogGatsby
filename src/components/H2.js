@@ -6,7 +6,7 @@ const H2 = styled.h2`
   font-weight: 700;
   line-height: 1.15;
   margin-bottom:10px;
-  text-transform:capitalize;
+  text-transform:none;
   
   @media only screen and (max-width: 768px) {
 	  font-size: 4.341288782816229vw;

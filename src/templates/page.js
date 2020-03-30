@@ -8,7 +8,7 @@ import Img from 'gatsby-image'
 import userConfig from '../../config'
 import '../styles/page.css'
 import indexStyles from '../styles/index.module.css'
-import GitHubButton from 'react-github-btn'
+//import GitHubButton from 'react-github-btn'
 
 export const PageTemplate = ({ title, content, slug, featureimage }) => {
   return (
@@ -18,12 +18,14 @@ export const PageTemplate = ({ title, content, slug, featureimage }) => {
     </Helmet>
     
     {featureimage &&
-    <div className={indexStyles.pageImg}><Img fluid={featureimage} alt={title}/></div>
+	    <div className={indexStyles.pageImg}>
+	    	<Img fluid={featureimage} alt={title}/>
+	    </div>
     }
     <section className="section section--gradient">
       <div className="container" id="pageTitle">
-        <h1 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">{title}</h1>
-<GitHubButton href="https://github.com/zakirsajib" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @zakirsajib on GitHub">Follow @zakirsajib</GitHubButton>
+        <h1 className="title is-size-1 has-text-weight-bold is-bold-light has-text-centered">{title}</h1>
+{/* <GitHubButton href="https://github.com/zakirsajib" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @zakirsajib on GitHub">Follow @zakirsajib</GitHubButton> */}
       </div>  
       <div className="container">
         <div className="content" dangerouslySetInnerHTML={{ __html: content }}/>

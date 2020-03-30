@@ -28,10 +28,10 @@
 	font-weight: 700;
 }
 
-@media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 769px) {
 	.post-excerpt p{
-		font-size: 1.25vw;
-		line-height: 1.5em;
+		font-size: 1.15vw;
+		line-height: 1.25em;
 	}
 }
 @media only screen and (max-width: 768px) {

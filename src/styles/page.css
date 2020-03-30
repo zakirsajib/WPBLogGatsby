@@ -5,7 +5,8 @@
 .content p, 
 ul li, 
 ol li{
-	font-size: 1.125em; word-wrap:break-word;
+	font-size: 1.5em; 
+	word-wrap:break-word;
 }
 .content a:hover{
 	color: #fff;
@@ -19,6 +20,7 @@ ol li{
 }
 .content blockquote{
     background-image: url(../img/quote_e50de5.svg);
+    background-position: 10% 0;
     background-repeat: no-repeat;
     background-color: transparent;
     border-left: 0;
@@ -26,10 +28,12 @@ ol li{
     margin-bottom: 80px;
     padding-top: 48px;
     quotes:none;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 .content blockquote p {
-    font-size: 1.5em!important;
-    font-weight: 400;
+    font-size: 2.5em;
+    font-weight: 700;
     letter-spacing: -.3px;
 }
 code{
@@ -49,10 +53,10 @@ code{
     display:grid;
     align-items: center;
     height: 50vh;
-    top:20%;
+    top:0;
 }
 .index-module--pageImg--3iY_7 .gatsby-image-wrapper,
-.post-module--postImg--3Kcad .gatsby-image-wrapper{height:80vh;}
+.post-module--postImg--3Kcad .gatsby-image-wrapper{height:50vh;}
 .contactForm{
 	margin-left:4em;
 	margin-right:4em;
@@ -91,4 +95,12 @@ th {
 }
 @media screen and (max-width: 768px){
     #mobileSection{padding: 0 0.5rem;}
+    .content blockquote{
+		padding-left: 0;
+		padding-right: 0;
+		background-position: 0 0;   
+	}
+	.content blockquote p{
+		font-size: 1.5em;
+	}
 }
