@@ -31,5 +31,6 @@ progress{
 	appearance: none;
 	-moz-appearance: none;
 	-webkit-appearance: none;
+	bottom: 0;
 	top:auto!important;
 }

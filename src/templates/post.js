@@ -44,7 +44,7 @@ import { FacebookProvider, Comments } from 'react-facebook'
       	<div className={postStyles.postImg}><Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /></div>
         <section className="section">
         <div className={postStyles.entryHeader}>
-        <h1 className="title is-size-2 has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: post.title}}/>
+        <h1 className="title is-size-1-desktop is-size-4-mobile has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: post.title}}/>
       <p style={{color: `#f9fafc`}}>{' '}{post.date} - {post.fields.readingTime.text}</p>
       {post.date != post.modified ? (
       <p style={{color: `#f9fafc`}}><b>Last updated on:</b>{' '}{post.modified}</p>
