@@ -8,16 +8,32 @@ ol li{
 	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320))); 
 	word-wrap:break-word;
 }
+/*
 .content a:hover{
 	color: #fff;
-    padding: 5px 0;
     background-color: #6bc76b;
 }
+*/
 .content .pagination-previous:hover, 
 .content .pagination-next:hover{
-	padding-left: 0.75em;
-    padding-right: 0.75em;
+	color: #fff;
+    background-color: #90b7ff;
+    border-color: #90b7ff;
 }
+.pagination-previous, 
+.pagination-next{
+	background-color: #4687ff;
+    border-color: #4687ff;
+    transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+    padding: 10px 23px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+
+
 .content blockquote{
     background-image: url(../img/quote_e50de5.svg);
     background-position: 10% 0;
@@ -26,7 +42,6 @@ ol li{
     border-left: 0;
     margin-top: 15rem;
     margin-bottom: 15rem!important;
-/*     padding-top: 48px; */
     quotes:none;
     padding-left: 10em;
     padding-right: 10em;
