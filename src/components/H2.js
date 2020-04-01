@@ -2,18 +2,11 @@ import styled from 'styled-components';
 
 const H2 = styled.h2`
   color: #3e465b;
-  font-size: 2.341288782816229vw;
+  font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 700;
   line-height: 1.15;
   margin-bottom:10px;
   text-transform:none;
-  
-  @media only screen and (max-width: 768px) {
-	  font-size: 4.341288782816229vw;
-  }
-  @media only screen and (max-width: 568px) {
-	  font-size: 6.341288782816229vw;
-  }
   
 `;
 
