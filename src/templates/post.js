@@ -55,9 +55,15 @@ import { FacebookProvider, Comments } from 'react-facebook'
         <div className="columns">
           <div className="column is-12">               
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
-          <div style={{ marginTop: `4rem` }}>
-          <p style={{color: `#272822`}}><b>Last updated on:</b>{' '}{post.modified}</p>
+			<div style={{ marginTop: `4rem` }}>
+				<p style={{color: `#272822`}}><b>Last updated on:</b>{' '}{post.modified}</p>
             </div>
+         </div>
+        </div>
+      </div>   
+       <div className="container content">
+        <div className="columns">
+          <div className="column is-12">     
             <div style={{ marginTop: `4rem` }}>
               {post.categories && post.categories.length ? (
                   <div>
