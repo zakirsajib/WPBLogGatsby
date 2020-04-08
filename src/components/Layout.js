@@ -7,6 +7,7 @@ import './all.sass'
 import GlobalStyle from '../global-styles'
 import userConfig from '../../config'
 
+
 import Footer from './Footer'
 
 const TemplateWrapper = ({ children }) => (
