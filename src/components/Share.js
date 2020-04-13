@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const ShareWrapper = styled.div`
   margin-top: 50px;
-  text-align: center;
   padding-bottom:50px;
 
   .Demo__some-network {

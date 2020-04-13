@@ -8,7 +8,6 @@ import '../styles/postList.css'
 
 import indexStyles from '../styles/index.module.css'
 
-import StayHome from '../img/18168-stay-safe-stay-home.gif'
 import HandWash from '../img/17686-wash-your-hands-regularly.gif'
 import Mask from '../img/17895-wear-mask.gif'
 import Sanitizer from '../img/17899-hand-sanitizer.gif'
@@ -23,12 +22,11 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section" id="mobileSection">
         <div className="container">
-        <div className="covid-19 column has-text-centered-mobile">
-        	<img src={StayHome} alt="StayHome" width="250px" height="250px"/>
-			<img src={HandWash} alt="HandWash" width="250px" height="250px"/>
-			<img src={Mask} alt="Mask" width="250px" height="250px"/>
-			<img src={Sanitizer} alt="Sanitizer" width="250px" height="250px"/>
-			<img src={Punched} alt="Punched" width="250px" height="250px"/>
+        <div className="covid-19 columns is-centered has-text-centered-mobile">
+			<img src={HandWash} alt="HandWash" width="100px" height="100px"/>
+			<img src={Mask} alt="Mask" width="100px" height="100px"/>
+			<img src={Sanitizer} alt="Sanitizer" width="100px" height="100px"/>
+			<img src={Punched} alt="Punched" width="100px" height="100px"/>
         </div>
           {posts.map(({ node: post }) => (
             <div className="columns postList" key={post.id}>
