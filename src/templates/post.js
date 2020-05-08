@@ -21,11 +21,6 @@ import postStyles from '../styles/post.module.css'
 import ShareWrapper from '../components/Share'
 import { FacebookProvider, Comments } from 'react-facebook'
 
-import HandWash from '../img/17686-wash-your-hands-regularly.gif'
-import Mask from '../img/17895-wear-mask.gif'
-import Sanitizer from '../img/17899-hand-sanitizer.gif'
-import Punched from '../img/18246-covid-19-get-punched.gif'
-
     let url
     if (typeof window !== `undefined`) {
       url = window.location.href;
@@ -69,17 +64,6 @@ import Punched from '../img/18246-covid-19-get-punched.gif'
         <div className="columns">
           <div className="column is-12">     
             <div>
-              
-            <div className="covid-19 column has-text-centered-mobile">
-				<img src={HandWash} alt="HandWash" width="100px" height="100px"/>
-				<img src={Mask} alt="Mask" width="100px" height="100px"/>
-				<img src={Sanitizer} alt="Sanitizer" width="100px" height="100px"/>
-				<img src={Punched} alt="Punched" width="100px" height="100px"/>
-			</div>
-              
-              
-              
-              
               
               {post.categories && post.categories.length ? (
                   <div>

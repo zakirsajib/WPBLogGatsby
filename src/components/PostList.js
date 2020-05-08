@@ -8,11 +8,6 @@ import '../styles/postList.css'
 
 import indexStyles from '../styles/index.module.css'
 
-import HandWash from '../img/17686-wash-your-hands-regularly.gif'
-import Mask from '../img/17895-wear-mask.gif'
-import Sanitizer from '../img/17899-hand-sanitizer.gif'
-import Punched from '../img/18246-covid-19-get-punched.gif'
-
 let count = 0;
 
 export default class IndexPage extends React.Component {
@@ -22,12 +17,6 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section" id="mobileSection">
         <div className="container">
-        <div className="covid-19 columns is-centered has-text-centered-mobile">
-			<img src={HandWash} alt="HandWash" width="100px" height="100px"/>
-			<img src={Mask} alt="Mask" width="100px" height="100px"/>
-			<img src={Sanitizer} alt="Sanitizer" width="100px" height="100px"/>
-			<img src={Punched} alt="Punched" width="100px" height="100px"/>
-        </div>
           {posts.map(({ node: post }) => (
             <div className="columns postList" key={post.id}>
               <div className="column featuredImage" style={{order: count}}>
