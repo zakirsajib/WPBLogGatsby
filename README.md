@@ -41,7 +41,6 @@ Demo: https://nirvana.netlify.com
 * Related posts
 * Search functionality
 * Gravity form integration
-* Slideshow or carousel
 * Portfolio
 * Instagram integration
 
