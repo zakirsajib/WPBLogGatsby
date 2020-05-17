@@ -4,7 +4,7 @@ This starter is forked from the
 [gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms)
 and modified to use WordPress instead of netlify-cms, using the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin as the data connector.
 
-Demo: https://nirvana.netlify.com
+Demo: https://nirvana.netlify.app
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/43eb90a5-e89b-452e-b7b2-358f951320b6/deploy-status)](https://app.netlify.com/sites/nirvana/deploys)
 
