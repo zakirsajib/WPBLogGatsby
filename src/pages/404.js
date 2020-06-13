@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-import '../components/all.sass'
-import '../global-styles'
+//import '../components/all.sass'
+//import '../global-styles'
 
 const NotFoundPage = () => (
   <Layout>

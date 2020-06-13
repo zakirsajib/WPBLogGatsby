@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://nirvana.netlify.com`,
+        siteUrl: `https://nirvana.netlify.app`,
       },
     },
     `gatsby-plugin-sass`,
@@ -30,7 +30,7 @@ module.exports = {
         ],
         thanks: [`Gatsby`, `Node`],
         site: {
-          'Last update': `2019/12/25`,
+          'Last update': `2020/06/13`,
           Standards: `JavaScript`,
           Components: `humans-generator`,
           Softwares: `Visual Studio Code`
@@ -39,21 +39,12 @@ module.exports = {
       }
     },
     {
-      	resolve: `gatsby-plugin-google-fonts`,
-      	options: {
-	        fonts: [
-	           `Maven+Pro\:400, 500, 700`
-	        ],
-	        display: 'swap'
-	    },
-    },
-    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
         color: userConfig.primaryColor,
         // Disable the loading spinner.
-        showSpinner: false,
+        showSpinner: true,
       },
     },
     {
@@ -95,9 +86,7 @@ module.exports = {
       resolve: "gatsby-plugin-preconnect",
       options: {
         domains: [
-          "https://www.google-analytics.com",
-          "https://fonts.googleapis.com",
-          "https://fonts.gstatic.com"
+          "https://www.google-analytics.com"
         ]
       }
     },
@@ -109,8 +98,8 @@ module.exports = {
     //       {
     //         resolve: `gatsby-remark-prismjs`,
     //         options: {
-    //           classPrefix: "language-",             
-    //           inlineCodeMarker: null,             
+    //           classPrefix: "language-",
+    //           inlineCodeMarker: null,
     //           aliases: {},
     //           showLineNumbers: false,
     //           noInlineHighlight: false,
@@ -118,7 +107,7 @@ module.exports = {
     //       },
     //     ],
     //   },
-    // },   
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -160,17 +149,18 @@ module.exports = {
       },
     },
     {
-      // Removes unused css rules
-      resolve:'gatsby-plugin-purgecss',
-      options: {
-        // Activates purging in gatsby develop
-        develop: false,
-        // Ignore
-        ignore: ['styles/page.css'],
-        // Purge only the main css file
-        purgeOnly: ['/all.sass','styles/'],
-      },
+        // Removes unused css rules
+        resolve:'gatsby-plugin-purgecss',
+            options: {
+                // Activates purging in gatsby develop
+                develop: false,
+                // Ignore
+                ignore: '',
+                // Purge only
+                purgeOnly: ['styles/', 'templates/', 'components/PostList'],
+            },
     }, // must be after other CSS plugins
+    'gatsby-plugin-dark-mode',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

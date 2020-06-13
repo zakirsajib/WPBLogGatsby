@@ -6,16 +6,16 @@ module.exports = {
   primaryColor: '#3e465b', // Required
   showHeaderImage: true,
   showShareButtons: true,
-  postsPerPage: 5, // Required
+  postsPerPage: 6, // Required
   googleAnalyticsID: 'UA-152596464-1',
   facebookAPPID: '1819085524892588',
   facebookAPPSecret: '202beeeed74b7427cdbb44d3f48d599c',
   social: {
-    website: 'https://zakirsajib.netlify.com',
+    website: 'https://zsresume.netlify.app',
     github: 'https://github.com/zakirsajib',
     linkedin: 'https://www.linkedin.com/in/zakirsajib',
     instagram: 'https://www.instagram.com/wp.guru'
   },
   pathPrefix: '/',
-  siteUrl: 'https://nirvana.netlify.com',
+  siteUrl: 'https://nirvana.netlify.app',
 };

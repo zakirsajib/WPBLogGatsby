@@ -1,4 +1,4 @@
-import "./src/styles/global.css"
+import './src/fonts/fonts.css'
 import 'lazysizes'
 require("prismjs/themes/prism-okaidia.css")
 

@@ -30,9 +30,9 @@ class Navbar extends Component {
   render() {
     return (
       <StaticQuery
-        query={graphql`  
+        query={graphql`
         {
-            allWordpressPage { 
+            allWordpressPage {
               edges {
                 node {
                   title
@@ -49,7 +49,7 @@ class Navbar extends Component {
             <nav className="navbar is-transparent" id="header">
               <div className="container">
                 <div className="navbar-brand">
-                  <Link to="/" className="navbar-item logo" style={{fontSize: `1.8rem`,fontWeight: `700`}}>NIRVANA</Link>
+                  <Link to="/" className="navbar-item logo has-text-weight-bold is-size-4">NIRVANA</Link>
                   <div className="navbar-burger burger" data-target="navMenu">
                     <span />
                     <span />
@@ -108,7 +108,7 @@ class Navbar extends Component {
       />
     );
   }
-  
+
 }
 
 export default Navbar;

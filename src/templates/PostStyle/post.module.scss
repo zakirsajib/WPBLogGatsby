@@ -1,0 +1,28 @@
+.postImg{
+    margin-top: -6em;
+    margin-bottom: 2em;
+    position: relative;
+    height: 80vh;
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        content: "";
+        background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.1)),to(rgba(0,0,0,.8)));
+        background: linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.8));
+    }
+}
+
+.pagination{
+	margin-bottom: 5em;
+}
+/* purgecss ignore */
+progress{
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	bottom: 0;
+	top:auto!important;
+}

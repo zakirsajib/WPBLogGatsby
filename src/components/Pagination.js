@@ -6,17 +6,17 @@ const Pagination = ({ pageContext, pathPrefix }) => {
 
   return (
     <nav className="pagination" role="navigation">
-      <div className="navbar navbar-menu">
+      <div className="navbar navbar-menu container">
         {previousPagePath && (
           <div className="navbar-item">
-            <Link to={previousPagePath} rel="prev">
+            <Link to={previousPagePath} rel="prev" className="button is-primary is-medium">
               Previous
             </Link>
           </div>
         )}
         {nextPagePath && (
           <div className="navbar-item">
-            <Link to={nextPagePath} rel="next">
+            <Link to={nextPagePath} rel="next" className="button is-primary is-medium">
               Next
             </Link>
           </div>

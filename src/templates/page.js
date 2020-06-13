@@ -6,37 +6,50 @@ import Layout from '../components/Layout'
 import Form from '../components/Contact'
 import Img from 'gatsby-image'
 import userConfig from '../../config'
-import '../styles/page.css'
-import indexStyles from '../styles/index.module.css'
+
+import PageStyle from './PageStyle/Wrapper'
+import indexStyles from './PageStyle/page.module.scss'
+
 //import GitHubButton from 'react-github-btn'
 
 export const PageTemplate = ({ title, content, slug, featureimage }) => {
   return (
-    <div>
+    <PageStyle>
     <Helmet title={`${title} | ${userConfig.title}`}>
-      <meta name="description" content={`${content}`} />
+        <meta name="description" content={`${content}`} />
+        <body className="singlePage" />
     </Helmet>
-    
+
     {featureimage &&
 	    <div className={indexStyles.pageImg}>
 	    	<Img fluid={featureimage} alt={title}/>
+                <div className="container" id="pageTitle">
+                    <h1
+                        className="title is-size-1 has-text-weight-bold is-bold-light has-text-centered has-text-white"
+                    >{title}
+                    </h1>
+                  {/* <GitHubButton href="https://github.com/zakirsajib" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @zakirsajib on GitHub">Follow @zakirsajib</GitHubButton> */}
+                </div>
 	    </div>
     }
     <section className="section section--gradient">
-      <div className="container" id="pageTitle">
-        <h1 className="title is-size-1 has-text-weight-bold is-bold-light has-text-centered">{title}</h1>
-{/* <GitHubButton href="https://github.com/zakirsajib" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @zakirsajib on GitHub">Follow @zakirsajib</GitHubButton> */}
-      </div>  
-      <div className="container">
-        <div className="content" dangerouslySetInnerHTML={{ __html: content }}/>
-        {slug == 'contact' ? (
-          <div className="contactForm" style={{ marginBottom: `4em` }}>
-          <Form />
-          </div>
-        ): null }
-      </div>
+        <div className="container">
+            <div className="columns is-centered">
+                <div className="column is-12">
+                    <div
+                        className="content"
+                        dangerouslySetInnerHTML={{ __html: content }}
+                    />
+                    {slug == 'contact' ? (
+                        <div className="contactForm">
+                            <Form />
+                        </div>
+                    ): null }
+                </div>
+            </div>
+        </div>
     </section>
-    </div>
+</PageStyle>
   )
 }
 
@@ -50,8 +63,8 @@ const Page = ({ data }) => {
 
   return (
     <Layout>
-      <PageTemplate 
-      title={page.title} 
+      <PageTemplate
+      title={page.title}
       content={page.content}
       slug={page.slug}
       featureimage={page.featured_media.localFile.childImageSharp.fluid}

@@ -1,0 +1,51 @@
+@import "~bulma/sass/utilities/initial-variables"
+
+// @import "~bulma/sass/utilities/_all.sass"
+// @import "~bulma/sass/grid/columns.sass"
+// @import "~bulma/sass/base/_all.sass"
+// @import "~bulma/sass/elements/button.sass"
+// @import "~bulma/sass/elements/container.sass"
+// @import "~bulma/sass/elements/title.sass"
+// @import "~bulma/sass/form/_all.sass"
+// @import "~bulma/sass/components/navbar.sass"
+// @import "~bulma/sass/layout/hero.sass"
+// @import "~bulma/sass/layout/section.sass"
+
+@import "~bulma"
+
+// Config vars
+$kaldi-red: #FD461E
+$primary: $kaldi-red
+$button-background-color: #6bc76b
+$body-background-color: #f9fafc
+$link: #3e465b
+$link-hover: #00c4a7
+$family-sans-serif: 'Elena'
+$family-monospace: 'Mija'
+
+body,
+html
+    background-color: $body-background-color
+    font-family: $family-sans-serif
+
+a
+    color: $link
+    transition: all 0.5s linear
+    &:hover
+        color: $link-hover
+
+.singlePage
+    .navbar-menu [aria-current],
+    a.navbar-item:hover
+        color: $link-hover
+
+.single a.navbar-item:hover
+    color: $link-hover
+
+a.navbar-item:hover
+    color: $link-hover
+    background-color: transparent
+
+a.navbar-item.logo,
+.content blockquote p
+    font-family: $family-monospace

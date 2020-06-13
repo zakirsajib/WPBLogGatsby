@@ -2,55 +2,69 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import H1 from './H1'
-import H2 from './H2'
-import '../styles/postList.css'
 
-import indexStyles from '../styles/index.module.css'
+import Wrapper from './PostList/Wrapper'
 
 let count = 0;
 
 export default class IndexPage extends React.Component {
   render() {
     const { posts, title} = this.props
-		
+
     return (
-      <section className="section" id="mobileSection">
-        <div className="container">
-          {posts.map(({ node: post }) => (
-            <div className="columns postList" key={post.id}>
-              <div className="column featuredImage" style={{order: count}}>
-              	<Link to={post.slug}>
-			  		<Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/>
-			  	</Link> 
-              </div>
-              <div className="column" id={indexStyles.postContent}>
-              <div className="postContentInner">
-              <span key={count += 1}></span>
-              {count == 2 ? (
-                <span key={count = 0}></span>
-              ): null }
-              <H2>
-                <Link to={post.slug} dangerouslySetInnerHTML={{ __html: post.title}}></Link>
-              </H2>
-              <p style={{marginBottom: `15px`}}>{post.fields.readingTime.text}</p>
-              <div>              
-              	<div className="post-excerpt" dangerouslySetInnerHTML={{ __html: post.excerpt}}/>
-              <div className={indexStyles.postMeta}>
-              <div className="postMetaDetails">  
-            <div className="publishedDate"><small>Published on {post.date}</small></div>
-               <div className="readMore"> 
-               <Link className="readMoreLink" to={post.slug}>
-                  Read more
-               </Link></div></div>
-               </div>
-              </div>
-              </div>
+        <Wrapper className="section">
+            <div className="container">
+                <div className="grid">
+                    {posts.map(({ node: post }) => (
+                        <div className="postList" key={post.id}>
+                            <div className="column featuredImage" style={{order: count}}>
+              	                <Link to={`/${post.slug}/`}>
+			  		                <Img
+                                        fluid ={post.featured_media.localFile.childImageSharp.fluid}
+                                    />
+			  	                </Link>
+                            </div>
+                            <div className="column">
+                                <div className="postContentInner">
+                                  <span key={count += 1}></span>
+                                  {count == 2 ? (
+                                    <span key={count = 0}></span>
+                                  ): null }
+                                    <div className="part-one">
+                                      <h2>
+                                        <Link
+                                            to={`/${post.slug}/`}
+                                            dangerouslySetInnerHTML={{ __html: post.title}}
+                                        ></Link>
+                                      </h2>
+                                      <p
+                                        className="readingTime has-text-grey-light"
+                                       >
+                                       {post.fields.readingTime.text}
+                                       </p>
+                                    </div>
+                              	    <div
+                                        className="post-excerpt"
+                                        dangerouslySetInnerHTML={{ __html: post.excerpt}}
+                                    />
+
+                                    <div className="postMetaDetails">
+                                        <div className="publishedDate is-size-7 has-text-grey-lighter">
+                                            Published on {post.date}
+                                        </div>
+                                        <div className="readMore">
+                                            <Link className="button is-primary is-outlined" to={post.slug}>
+                                            Read more
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-            </div>
-          ))}
-        </div>
-      </section>
+        </Wrapper>
     )
   }
 }
