@@ -18,7 +18,7 @@
 .pagination{
 	margin-bottom: 5em;
 }
-/* purgecss ignore */
+/* purgecss start ignore */
 progress{
 	appearance: none;
 	-moz-appearance: none;
@@ -26,3 +26,4 @@ progress{
 	bottom: 0;
 	top:auto!important;
 }
+/* purgecss end ignore */
