@@ -53,7 +53,10 @@ export default class IndexPage extends React.Component {
                                             Published on {post.date}
                                         </div>
                                         <div className="readMore">
-                                            <Link className="button is-primary is-outlined" to={post.slug}>
+                                            <Link
+                                                className="button is-primary is-outlined"
+                                                to={`/${post.slug}/`}
+                                            >
                                             Read more
                                             </Link>
                                         </div>
