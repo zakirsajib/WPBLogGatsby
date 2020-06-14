@@ -1,11 +1,16 @@
 import React , { Component } from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
+import ThemeChanger from '../components/ThemeChanger'
+
 import github from '../img/github-icon.svg'
 import linkedin from '../img/linkedin-icon.svg'
-//import instagram from '../img/instagram-icon.svg'
 import home from '../img/link-icon.svg'
-//import logo from '../img/main.jpg'
+
+import githubLight from '../img/iconGitHub.svg'
+import linkedinLight from '../img/iconLinkedin.svg'
+import homeLight from '../img/iconLink.svg'
+
 import userConfig from '../../config'
 
 class Navbar extends Component {
@@ -70,7 +75,7 @@ class Navbar extends Component {
                   </div>
                   <div className="navbar-end social-icons">
                     <a
-                      className="navbar-item"
+                      className="navbar-item dark"
                       href={userConfig.social.website}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -80,7 +85,17 @@ class Navbar extends Component {
                       </span>
                     </a>
                     <a
-                      className="navbar-item"
+                      className="navbar-item light"
+                      href={userConfig.social.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="icon">
+                        <img src={homeLight} alt="Zakir Sajib" />
+                      </span>
+                    </a>
+                    <a
+                      className="navbar-item dark"
                       href={userConfig.social.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -90,7 +105,17 @@ class Navbar extends Component {
                       </span>
                     </a>
                     <a
-                      className="navbar-item"
+                      className="navbar-item light"
+                      href={userConfig.social.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="icon">
+                        <img src={githubLight} alt="Github" />
+                      </span>
+                    </a>
+                    <a
+                      className="navbar-item dark"
                       href={userConfig.social.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -99,6 +124,17 @@ class Navbar extends Component {
                         <img src={linkedin} alt="LinkedIn" />
                       </span>
                     </a>
+                    <a
+                      className="navbar-item light"
+                      href={userConfig.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="icon">
+                        <img src={linkedinLight} alt="LinkedIn" />
+                      </span>
+                    </a>
+                    <ThemeChanger />
                   </div>
                 </div>
               </div>

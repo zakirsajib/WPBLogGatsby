@@ -23,10 +23,61 @@ $link-hover: #00c4a7
 $family-sans-serif: 'Elena'
 $family-monospace: 'Mija'
 
-body,
-html
+body
     background-color: $body-background-color
     font-family: $family-sans-serif
+
+body.light
+    .navbar-item.dark
+        display: flex
+    .navbar-item.light
+        display: none
+
+body.dark
+    background-color: #393939
+    color: #fff
+    a
+        color: #fff
+        &:hover
+            color: $link-hover
+    .postList
+        box-shadow: rgb(35, 38, 52) 0px 26px 50px 0px
+
+    strong
+        color: #fff
+
+    .navbar-item.dark
+        display: none
+    .navbar-item.light
+        display: flex
+
+    .content h1,
+    .content h2,
+    .content h3,
+    .content h4,
+    .content h5,
+    .content h6
+        color: #fff
+
+    code
+        background-color: #000
+    .content blockquote
+        background-color: transparent
+
+    .input,
+    .textarea
+        background-color: #393939
+        color: #fff
+
+    input::placeholder,
+    textarea::placeholder
+        color: #fff
+    @media screen and (max-width: 1023px)
+        a.navbar-item.logo
+            color: #fff
+        .navbar-burger
+            color: $link-hover
+
 
 a
     color: $link
@@ -34,17 +85,12 @@ a
     &:hover
         color: $link-hover
 
-.singlePage
-    .navbar-menu [aria-current],
-    a.navbar-item:hover
-        color: $link-hover
 
-.single a.navbar-item:hover
-    color: $link-hover
-
+.navbar-menu [aria-current],
 a.navbar-item:hover
-    color: $link-hover
-    background-color: transparent
+        color: $link-hover
+        background-color: transparent
+
 
 a.navbar-item.logo,
 .content blockquote p

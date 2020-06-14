@@ -13,8 +13,7 @@ module.exports = {
   social: {
     website: 'https://zsresume.netlify.app',
     github: 'https://github.com/zakirsajib',
-    linkedin: 'https://www.linkedin.com/in/zakirsajib',
-    instagram: 'https://www.instagram.com/wp.guru'
+    linkedin: 'https://www.linkedin.com/in/zakirsajib'
   },
   pathPrefix: '/',
   siteUrl: 'https://nirvana.netlify.app',

@@ -37,7 +37,6 @@ import { FacebookProvider, Comments } from 'react-facebook'
     <Layout>
       <Helmet title={`${post.title} | ${userConfig.title}`}>
         <meta name="description" content={`${post.excerpt}`}/>
-        <body className="single post" />
       </Helmet>
       <ReadingProgress targetEl="#post-content" />
         <PostStyle>
