@@ -31,7 +31,7 @@ export default class IndexPage extends React.Component {
                                     <span key={count = 0}></span>
                                   ): null }
                                     <div className="part-one">
-                                      <h2>
+                                      <h2 className="mb-1">
                                         <Link
                                             to={`/${post.slug}/`}
                                             dangerouslySetInnerHTML={{ __html: post.title}}
@@ -44,12 +44,12 @@ export default class IndexPage extends React.Component {
                                        </p>
                                     </div>
                               	    <div
-                                        className="post-excerpt"
+                                        className="post-excerpt pt-5 pb-5"
                                         dangerouslySetInnerHTML={{ __html: post.excerpt}}
                                     />
 
                                     <div className="postMetaDetails">
-                                        <div className="publishedDate is-size-7 has-text-grey-lighter">
+                                        <div className="publishedDate is-size-6 has-text-grey-lighter">
                                             Published on {post.date}
                                         </div>
                                         <div className="readMore">

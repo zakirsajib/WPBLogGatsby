@@ -21,16 +21,14 @@ const Section = styled.section`
             h2{
                 color: #3e465b;
                 font-size: calc(.55842vw + .95296em);
-                margin-bottom:10px;
                 text-transform:none;
             }
             .readingTime{
-                font-size: calc(.35842vw + .495296em);
+                font-size: calc(.0035842vw + .95296em);
             }
             .post-excerpt {
-                padding-bottom: 1rem;
                 p{
-                	font-size: calc(.35842vw + .495296em);
+                	font-size: calc(.1135842vw + .95296em);
                 	line-height: 1.5em;
                 }
             }
