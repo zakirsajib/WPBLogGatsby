@@ -21,7 +21,7 @@ const TemplateWrapper = ({ children }) => (
         <div><ScrollUpButton /></div>
         <Footer className="has-text-centered mt-6 pb-6">
           <p>© 2019 - 2020 Zakir Sajib. All Rights Reserved.</p>
-          <p>Built with Gatsby - datasource is <a href="https://zsbloggatsby.wordpress.com" target="_blank" rel="noopener noreferrer">WordPress</a> - code on gitHub - hosted on Netlify</p>
+          <p>Built with Gatsby - datasource is <a href="https://zsbloggatsby.wordpress.com" target="_blank" rel="noopener noreferrer">WordPress</a> - code on GitHub - hosted on Netlify</p>
         </Footer>
     </div>
 )

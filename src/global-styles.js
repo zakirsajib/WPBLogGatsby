@@ -22,11 +22,6 @@ nav#header {
 .navbar-link{
     font-size:1.25rem;
 }
-
-.single a.navbar-item,
-.single .navbar-link{
-    color: #fff;
-}
 .pagination{
     .navbar-menu {
         display: flex;
@@ -40,7 +35,7 @@ nav#header {
     }
 }
 
-.singlePage{
+.single{
     a.navbar-item,
     .navbar-link,
     a.navbar-item.logo,
@@ -83,7 +78,7 @@ body.light {
 .mode-container {
   width: 24px;
   height: 24px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 // CSS.gg icons for sun and moon
 .gg-sun {

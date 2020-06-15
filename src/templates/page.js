@@ -16,6 +16,7 @@ export const PageTemplate = ({ title, content, slug, featureimage }) => {
   return (
     <PageStyle>
     <Helmet title={`${title} | ${userConfig.title}`}>
+        <html className="single page" />
         <meta name="description" content={`${content}`} />
     </Helmet>
 
