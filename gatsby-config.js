@@ -115,6 +115,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
           },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+              options: {
+                wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
           `gatsby-remark-lazy-load`,
           `gatsby-remark-prismjs`,
         ]

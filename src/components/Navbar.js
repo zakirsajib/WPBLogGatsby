@@ -3,6 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 
 import ThemeChanger from '../components/ThemeChanger'
 
+
 import github from '../img/github-icon.svg'
 import linkedin from '../img/linkedin-icon.svg'
 import home from '../img/link-icon.svg'

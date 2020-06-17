@@ -65,7 +65,9 @@ import { FacebookProvider, Comments } from 'react-facebook'
             <div className="container content" id="post-content">
                 <div className="columns is-centered">
                   <div className="column is-12">
-                    <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                    <div
+                        dangerouslySetInnerHTML={{ __html: post.content }} 
+                    />
 
                     <article className="message is-success mt-6">
                       <div className="message-body">
