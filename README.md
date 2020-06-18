@@ -34,15 +34,14 @@ Demo: https://nirvana.netlify.app
 * Lazyload
 * Contact form
 * Comments by just comments
+* Implemented Dark modified
+* Implemented Loader Spinner
 
 ### To Be Done
 
-* Conditional check on featured image
 * Related posts
 * Search functionality
-* Gravity form integration
-* Portfolio
-* Instagram integration
+* May be some kind of animations or transitions
 
 
 ### Known Limitations
@@ -61,7 +60,7 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 ## WordPress Setup
 
 * If you use WordPress.com, then you won't need to install any plugins. But if you use self hosted WordPress.org, then you need to install graphQL plugin (https://github.com/wp-graphql/wp-graphql). Installation guidance: https://docs.wpgraphql.com/getting-started/install-and-activate/
-* If you want to host on netlify and want to updates netlify (trigger build process) when contents of wordpress changes then you need to install netlify plugin (https://wordpress.org/plugins/webhook-netlify-deploy/) in your wordpress site. 
+* If you want to host on netlify and want to updates netlify (trigger build process) when contents of wordpress changes then you need to install netlify plugin (https://wordpress.org/plugins/webhook-netlify-deploy/) in your wordpress site.
 
 
 ## Contributors

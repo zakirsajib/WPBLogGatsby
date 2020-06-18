@@ -66,7 +66,7 @@ import { FacebookProvider, Comments } from 'react-facebook'
                 <div className="columns is-centered">
                   <div className="column is-12">
                     <div
-                        dangerouslySetInnerHTML={{ __html: post.content }} 
+                        dangerouslySetInnerHTML={{ __html: post.content }}
                     />
 
                     <article className="message is-success mt-6">
@@ -83,11 +83,11 @@ import { FacebookProvider, Comments } from 'react-facebook'
                     <div className="column is-12">
                         <div>
                           {post.categories && post.categories.length ? (
-                              <div class="field is-grouped is-grouped-multiline">
+                              <div className="field is-grouped is-grouped-multiline">
                                 {post.categories.map(category => (
-                                    <div class="control" key={`${category.slug}cat`}>
-                                        <div class="tags has-addons">
-                                            <span class="tag is-dark">
+                                    <div className="control" key={`${category.slug}cat`}>
+                                        <div className="tags has-addons">
+                                            <span className="tag is-dark">
                                                 <Link
                                                     to={`/categories/${category.slug}/`}
                                                     className="has-text-white"
@@ -95,7 +95,7 @@ import { FacebookProvider, Comments } from 'react-facebook'
                                                 {category.name}
                                                 </Link>
                                             </span>
-                                            <span class="tag is-success">categories</span>
+                                            <span className="tag is-success">categories</span>
                                         </div>
                                     </div>
             		            ))}
@@ -103,18 +103,18 @@ import { FacebookProvider, Comments } from 'react-facebook'
             		        ) : null}
                               {post.tags && post.tags.length ? (
 
-                              <div class="field is-grouped is-grouped-multiline">
+                              <div className="field is-grouped is-grouped-multiline">
                                 {post.tags.map(tag => (
-                                    <div class="control" key={`${tag.slug}tag`}>
-                                        <div class="tags has-addons">
-                                            <span class="tag is-dark">
+                                    <div className="control" key={`${tag.slug}tag`}>
+                                        <div className="tags has-addons">
+                                            <span className="tag is-dark">
                                                 <Link
                                                     to={`/tags/${tag.slug}/`}
                                                     className="has-text-white"
                                                 >{tag.name}
                                                 </Link>
                                             </span>
-                                            <span class="tag is-success">tags</span>
+                                            <span className="tag is-success">tags</span>
                                         </div>
                                     </div>
                                 ))}
