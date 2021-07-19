@@ -33,7 +33,7 @@
     "gatsby-remark-reading-time": "^1.0.1",
     "gatsby-remark-responsive-iframe": "^2.4.5",
     "gatsby-source-filesystem": "^2.3.11",
-    "gatsby-source-wordpress": "^3.3.11",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-remark": "^2.8.15",
     "gatsby-transformer-sharp": "^2.5.5",
     "gatsby-wordpress-reading-time": "^1.0.4",
